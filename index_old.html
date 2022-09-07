@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="buzz ON">
+  <meta property="og:url" content="http://www.buzzon.co.kr">
+  <meta property="og:description" content="Buzz On">
+  <meta property="og:image" content="./src/img/common/img-share.png">
+  <link rel="short cut icon" type="image/x-icon" href="./src/img/icon/favicon.png">
+  <title>buzz ON</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./src/css/style.css">
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+  <div id="wrap">
+    <div id="header" class="intro-page" style="display:none;">
+
+    </div>
+
+    <div id="main" class="intro-page">
+      <div class="extra-key" style="position:fixed;top:10px;left:10px"><a href="./index.html">새 페이지</a></div>
+      <section class="intro-section">
+        <div class="section-inner">
+          <!-- <div class="section-wrap-inner flex-center"> -->
+          <!-- <div class="section-wrap-inner"> -->
+          <div class="section-content">
+            <h1 class="logo"><a href="./now.html"><img src="./src/img/common/logo.png" alt="buzzON logo"></a></h1>
+            <div class="intro-search">
+              <input type="text" id="introSearch" placeholder="검색어를 입력하세요">
+              <!-- <label for="introSearch">검색어를 입력하세요</label> -->
+              <p class="search-btn"></p>
+            </div>
+
+            <div class="intro-login">
+              <button id="introLogin" class="login-btn now-on">로그인</button>
+              <button id="introLogout" class="logout-btn">로그아웃</button>
+            </div>
+
+            <div class="intro-login-option clearFix">
+              <p class="id-remember">
+                <input id="idRemember" type="checkbox">
+                <label for="idRemember">아이디 기억하기</label>
+              </p>
+              <!-- <p class="find-user-info">
+                <a href="#">아이디/비밀번호 찾기</a>
+              </p>
+              <p class="join-us">
+                <a id="joinUs" href="#">회원가입</a>
+              </p> -->
+            </div>
+          </div>
+          <!-- </div> -->
+        </div>
+      </section>
+
+      <section class="content-section">
+        <div class="section-inner">
+          <article class="content-article article-keyword-now intro-keyword-now width-3-1 fl-r">
+            <div class="article-inner">
+              <div class="article-title">
+                <h3><b class="txt-gr">뜨고 있는 뉴스</b> 키워드</h3>
+                <span class="title-date">22.02.22일 기준</span>
+              </div>
+              <div class="article-content">
+                <div class="article-rank-wrap">
+                  <ul class="rank-list">
+                    <li class="rank-item">
+                      <a href="#" class="link-area" target="_blank">
+                        <p class="item-standing">1위</p>
+                        <span class="item-title">소득세</span>
+                      </a>
+                    </li>
+                    <li class="rank-item">
+                      <a href="#" class="link-area" target="_blank">
+                        <p class="item-standing">2위</p>
+                        <span class="item-title">갈등</span>
+                      </a>
+                    </li>
+                    <li class="rank-item">
+                      <a href="#" class="link-area" target="_blank">
+                        <p class="item-standing">3위</p>
+                        <span class="item-title">기본소득</span>
+                      </a>
+                    </li>
+                    <li class="rank-item">
+                      <a href="#" class="link-area" target="_blank">
+                        <p class="item-standing">4위</p>
+                        <span class="item-title">대선</span>
+                      </a>
+                    </li>
+                    <li class="rank-item">
+                      <a href="#" class="link-area" target="_blank">
+                        <p class="item-standing">5위</p>
+                        <span class="item-title">공천</span>
+                      </a>
+                    </li>
+                    <li class="rank-item">
+                      <a href="#" class="link-area" target="_blank">
+                        <p class="item-standing">6위</p>
+                        <span class="item-title">카카오</span>
+                      </a>
+                    </li>
+                    <li class="rank-item">
+                      <a href="#" class="link-area" target="_blank">
+                        <p class="item-standing">7위</p>
+                        <span class="item-title">SKT</span>
+                      </a>
+                    </li>
+                    <li class="rank-item">
+                      <a href="#" class="link-area" target="_blank">
+                        <p class="item-standing">8위</p>
+                        <span class="item-title">메타버스</span>
+                      </a>
+                    </li>
+                    <li class="rank-item">
+                      <a href="#" class="link-area" target="_blank">
+                        <p class="item-standing">9위</p>
+                        <span class="item-title">디지털자산</span>
+                      </a>
+                    </li>
+                    <li class="rank-item">
+                      <a href="#" class="link-area" target="_blank">
+                        <p class="item-standing">10위</p>
+                        <span class="item-title">NFT</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="content-article article-buzz-news width-3-2 fl-l">
+            <div class="article-inner">
+              <div class="article-title">
+                <h3>버즈메트릭스 뉴스레터</h3>
+                <span class="title-more"><a href="#">더 보기</a></span>
+              </div>
+              <div class="article-content">
+                <div class="article-list-wrap">
+                  <ul class="thumb-list">
+                    <li class="thumb-item">
+                      <a href="#" class="link-area" target="_blank">
+                        <div class="thumb-img"><img src="./src/img/main/buzz_2202.png" alt="버즈메트릭스 22년 02월 뉴스"></div>
+                        <p class="thumb-title">2022년 2월호 가상인간</p>
+                      </a>
+                    </li>
+                    <li class="thumb-item">
+                      <a href="#" class="link-area" target="_blank">
+                        <div class="thumb-img"><img src="./src/img/main/buzz_2112.png" alt="버즈메트릭스 21년 12월 뉴스"></div>
+                        <p class="thumb-title">2021년 12월호 밀키트</p>
+                      </a>
+                    </li>
+                    <li class="thumb-item">
+                      <a href="#" class="link-area" target="_blank">
+                        <div class="thumb-img"><img src="./src/img/main/buzz_2111.png" alt="버즈메트릭스 21년 11월 뉴스"></div>
+                        <p class="thumb-title">2022년 2월호 숏폼</p>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="content-article article-youtube-hot width-3-2 fl-l">
+            <div class="article-inner">
+              <div class="article-title">
+                <h3>유튜브 인기 동영상</h3>
+                <span class="title-more"><a href="#">더 보기</a></span>
+              </div>
+              <div class="article-content">
+                <div id="youtHotSwpContainer" class="article-list-wrap swiper-container">
+                  <div class="thumb-list swiper-wrapper">
+                    <div class="thumb-item swiper-slide">
+                      <a href="#" class="link-area" target="_blank">
+                        <div class="thumb-img"><img src="./src/img/main/youtube_001.jpg" alt="버즈메트릭스 22년 02월 뉴스"></div>
+                        <p class="thumb-title">[애쉬스 게임 리뷰] 짱구는 못말려! 나와 박사님의 여름방학 ~끝나지 않는 7일간의 여행~ 전격 리뷰!!!</p>
+                      </a>
+                    </div>
+                    <div class="thumb-item swiper-slide">
+                      <a href="#" class="link-area" target="_blank">
+                        <div class="thumb-img"><img src="./src/img/main/youtube_002.jpg" alt="버즈메트릭스 21년 12월 뉴스"></div>
+                        <p class="thumb-title">내가 더이상 통신사에서 폰을 안사는 이유. 훨씬 저렴한 자급제+알뜰폰 조합 장단점?</p>
+                      </a>
+                    </div>
+                    <div class="thumb-item swiper-slide">
+                      <a href="#" class="link-area" target="_blank">
+                        <div class="thumb-img"><img src="./src/img/main/youtube_003.jpg" alt="버즈메트릭스 21년 11월 뉴스"></div>
+                        <p class="thumb-title">『별의 커비 디스커버리』 소개 영상</p>
+                      </a>
+                    </div>
+                    <div class="thumb-item swiper-slide">
+                      <a href="#" class="link-area" target="_blank">
+                        <div class="thumb-img"><img src="./src/img/main/youtube_001.jpg" alt="버즈메트릭스 22년 02월 뉴스"></div>
+                        <p class="thumb-title">[애쉬스 게임 리뷰] 짱구는 못말려! 나와 박사님의 여름방학 ~끝나지 않는 7일간의 여행~ 전격 리뷰!!!</p>
+                      </a>
+                    </div>
+                    <div class="thumb-item swiper-slide">
+                      <a href="#" class="link-area" target="_blank">
+                        <div class="thumb-img"><img src="./src/img/main/youtube_002.jpg" alt="버즈메트릭스 21년 12월 뉴스"></div>
+                        <p class="thumb-title">내가 더이상 통신사에서 폰을 안사는 이유. 훨씬 저렴한 자급제+알뜰폰 조합 장단점?</p>
+                      </a>
+                    </div>
+                    <div class="thumb-item swiper-slide">
+                      <a href="#" class="link-area" target="_blank">
+                        <div class="thumb-img"><img src="./src/img/main/youtube_003.jpg" alt="버즈메트릭스 21년 11월 뉴스"></div>
+                        <p class="thumb-title">『별의 커비 디스커버리』 소개 영상</p>
+                      </a>
+                    </div>
+                    <div class="thumb-item swiper-slide">
+                      <a href="#" class="link-area" target="_blank">
+                        <div class="thumb-img"><img src="./src/img/main/youtube_001.jpg" alt="버즈메트릭스 22년 02월 뉴스"></div>
+                        <p class="thumb-title">[애쉬스 게임 리뷰] 짱구는 못말려! 나와 박사님의 여름방학 ~끝나지 않는 7일간의 여행~ 전격 리뷰!!!</p>
+                      </a>
+                    </div>
+                    <div class="thumb-item swiper-slide">
+                      <a href="#" class="link-area" target="_blank">
+                        <div class="thumb-img"><img src="./src/img/main/youtube_002.jpg" alt="버즈메트릭스 21년 12월 뉴스"></div>
+                        <p class="thumb-title">내가 더이상 통신사에서 폰을 안사는 이유. 훨씬 저렴한 자급제+알뜰폰 조합 장단점?</p>
+                      </a>
+                    </div>
+                    <div class="thumb-item swiper-slide">
+                      <a href="#" class="link-area" target="_blank">
+                        <div class="thumb-img"><img src="./src/img/main/youtube_003.jpg" alt="버즈메트릭스 21년 11월 뉴스"></div>
+                        <p class="thumb-title">『별의 커비 디스커버리』 소개 영상</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- article class="content-article article-youtube-hot width-3-2 fl-l">
+            <div class="article-inner">
+              <div class="article-title">
+                <h3>유튜브 인기 동영상</h3>
+                <span class="title-more"><a href="#">더 보기</a></span>
+              </div>
+              <div class="article-content">
+                <div class="article-list-wrap">
+                  <ul class="thumb-list">
+                    <li class="thumb-item">
+                      <a href="#" class="link-area" target="_blank">
+                        <div class="thumb-img"><img src="./src/img/main/youtube_001.jpg" alt="버즈메트릭스 22년 02월 뉴스"></div>
+                        <p class="thumb-title">[애쉬스 게임 리뷰] 짱구는 못말려! 나와 박사님의 여름방학 ~끝나지 않는 7일간의 여행~ 전격 리뷰!!!</p>
+                      </a>
+                    </li>
+                    <li class="thumb-item">
+                      <a href="#" class="link-area" target="_blank">
+                        <div class="thumb-img"><img src="./src/img/main/youtube_002.jpg" alt="버즈메트릭스 21년 12월 뉴스"></div>
+                        <p class="thumb-title">내가 더이상 통신사에서 폰을 안사는 이유. 훨씬 저렴한 자급제+알뜰폰 조합 장단점?</p>
+                      </a>
+                    </li>
+                    <li class="thumb-item">
+                      <a href="#" class="link-area" target="_blank">
+                        <div class="thumb-img"><img src="./src/img/main/youtube_003.jpg" alt="버즈메트릭스 21년 11월 뉴스"></div>
+                        <p class="thumb-title">『별의 커비 디스커버리』 소개 영상</p>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article -->
+        </div>
+      </section>
+    </div>
+
+    <div id="footer" class="intro-page">
+
+    </div>
+  </div>
+
+  <script src='./src/js/jquery-3.5.1.js'></script>
+  <script src="./src/js/include.js"></script>
+  <script src="./src/js/lib.js"></script>
+  <script src="./src/js/main.js"></script>
+</body>
+
+</html>
