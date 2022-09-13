@@ -655,12 +655,14 @@ body {
 }
 .tab-article .tab-list .tab-item.now-on {
   border-radius: 18px;
-  /* background-color: #fff; */
+  background-color: #fff;
+  box-shadow: 1px 3px 12px rgba(88, 88, 88, 0.2);
+}
+.tab-article .tab-list .tab-item.now-on > a {
   /* color: #463fb8; */
   background: linear-gradient(12deg, #463fb8, #7b3fb7);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  box-shadow: 1px 3px 12px rgba(88, 88, 88, 0.2);
 }
 .tab-article .tab-info-list {
   padding: 0 36px;
@@ -961,7 +963,8 @@ body {
   width: 0;
   height: 100%;
   /* background-color: #617ff8; */
-  background-color: #633fb8;
+  /* background-color: #633fb8; */
+  background-color: #866ac8;
   /* background: linear-gradient(12deg, #463fb8, #7b3fb7); */
   transition: 0.3s;
 }
@@ -986,7 +989,7 @@ body {
   display: block;
   width: 0;
   height: 100%;
-  background-color: #dbd4ec;
+  background-color: #cbbfe7;
   transition: 0.4s;
 }
 .detail-item > .item-sub-list > .detail-subs > .chart-horizontal > .posts-num {
