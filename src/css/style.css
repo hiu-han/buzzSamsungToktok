@@ -6,6 +6,7 @@
 @import url('./common.css');
 @import url('./layout.css');
 @import url('./lib.css');
+@import url('./sstt.css');
 
 /** SAMPLE **/
 .chart-dummy.engagement {
@@ -149,14 +150,42 @@ button:hover {
 .add-icon::before {
   content: '';
   display: inline-block;
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   margin-right: 6px;
   background-image: url('../img/icon/icon-preset.svg');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  vertical-align: -1px;
+  vertical-align: -3px;
+}
+.add-icon.icon--chart-pie::before {
+  background-image: url('../img/icon/icon-chart-pie-03.svg');
+  height: 22px;
+}
+.add-icon.icon--chart-line::before {
+  background-image: url('../img/icon/icon-chart-line.svg');
+}
+.add-icon.icon--chart-bar01::before {
+  background-image: url('../img/icon/icon-chart-bar-01.svg');
+}
+.add-icon.icon--chart-bar02::before {
+  background-image: url('../img/icon/icon-chart-bar-02.svg');
+}
+.add-icon.icon--chart-poly::before {
+  background-image: url('../img/icon/icon-chart-poly.svg');
+}
+.add-icon.icon--chart-bubble::before {
+  background-image: url('../img/icon/Icon-chart-bubble.svg');
+}
+.add-icon.icon--chart-table::before {
+  background-image: url('../img/icon/icon-chart-table.svg');
+}
+.add-icon.icon--chart-reference::before {
+  background-image: url('../img/icon/icon-chart-reference.svg');
+}
+.add-icon.icon--chart-rank::before {
+  background-image: url('../img/icon/icon-chart-rank.svg');
 }
 
 .tab-section .section-inner::after,
@@ -276,7 +305,7 @@ button:hover {
   background-color: #f19f69;
 }
 
-.article-engagement .add-icon::before,
+/* .article-engagement .add-icon::before,
 .article-sentiment .add-icon::before {
   background-image: url('../img/icon/Icon-chart-pie.svg');
   width: 16px;
@@ -306,9 +335,6 @@ button:hover {
 .article-sentiment-channels .add-icon::before {
   background-image: url('../img/icon/icon-chart-poly.svg');
 }
-/* .article-channel-details .add-icon::before, */
-/* .article-sentiment-keyword .add-icon::before, */
-/* .article-keyword-ranking .add-icon::before, */
 .article-keyword-trend .add-icon::before,
 .article-hottest-cafes .add-icon::before,
 .article-hottest-blogers .add-icon::before,
@@ -317,7 +343,6 @@ button:hover {
 .article-hottest-top10 .add-icon::before {
   background-image: url('../img/icon/Icon-chart-list.svg');
 }
-/* .article-sentiment-channels .add-icon::before, */
 .article-post-trend .add-icon::before,
 .article-engagement-trend .add-icon::before,
 .article-sentiment-trend .add-icon::before {
@@ -325,7 +350,7 @@ button:hover {
 }
 .article-keyword-association .add-icon::before {
   background-image: url('../img/icon/Icon-chart-bubble.svg');
-}
+} */
 
 .cont-select {
   position: relative;
@@ -629,7 +654,6 @@ body {
 }
 .tab-section article {
   display: inline-block;
-  /* width: 50%; */
   width: 100%;
   margin-bottom: 24px;
   font-size: 14px;
@@ -638,20 +662,20 @@ body {
   display: inline-block;
   padding: 0;
   margin-bottom: 16px;
-  font-size: 0;
   border-radius: 18px;
   background-color: #eeefef;
   box-shadow: 1px 3px 6px rgba(128, 128, 128, 0.1) inset;
+  font-size: 0;
 }
 .tab-article .tab-list .tab-item {
   display: inline-block;
-  padding: 13px 54px;
+  padding: 13px 40px;
   color: #919191;
-  font-size: 23px;
+  font-size: 22px;
   font-weight: 700;
 }
-.tab-article .tab-list .tab-hottest {
-  padding: 13px 48px;
+.tab-article .tab-list .tab-item {
+  letter-spacing: -0.02rem;
 }
 .tab-article .tab-list .tab-item.now-on {
   border-radius: 18px;
@@ -659,10 +683,7 @@ body {
   box-shadow: 1px 3px 12px rgba(88, 88, 88, 0.2);
 }
 .tab-article .tab-list .tab-item.now-on > a {
-  /* color: #463fb8; */
-  background: linear-gradient(12deg, #463fb8, #7b3fb7);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #866ac8;
 }
 .tab-article .tab-info-list {
   padding: 0 36px;
@@ -822,6 +843,89 @@ body {
 .section-inner > .article-channel-details {
   width: 100%;
 }
+
+.detail-list {
+  position: relative;
+}
+.chart-option__wrap {
+  position: relative;
+  padding-right: 20px;
+  margin: -14px 0 18px;
+  text-align: right;
+}
+.chart-option__wrap > .chart-option {
+  display: inline-block;
+  margin-left: 24px;
+}
+.chart-option__wrap > .chart-option:first-child {
+  margin-left: 0;
+}
+.chart-option__wrap > .chart-option--radio {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
+.chart-option__wrap > .chart-option--radio > .option-radio__list {
+  border-radius: 20px;
+  background-color: #efefef;
+  font-size: 0;
+}
+.chart-option__wrap .option-radio__item {
+  display: inline-block;
+  position: relative;
+  /* margin-right: 3px; */
+  margin-right: 0;
+}
+.chart-option__wrap .option-radio__item:last-child {
+  margin-right: 0;
+}
+.chart-option__wrap .option-radio__item > input {
+  display: none;
+}
+.chart-option__wrap .option-radio__item > label {
+  display: inline-block;
+  padding: 5px 11px;
+  border-radius: 20px;
+  /* border: 1px solid #eaeaea; */
+  border: 1px solid rgba(255, 255, 255, 0);
+  font-size: 13px;
+  font-weight: 500;
+  color: #818181;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.chart-option__wrap .option-radio__item > label:hover {
+  /* border: 1px solid #866ac8; */
+  color: #866ac8;
+}
+.chart-option__wrap .option-radio__item > input:checked + label {
+  border: 1px solid #866ac8;
+  /* background-color: #dcd4ef; */
+  background-color: #866ac8;
+  color: #fff;
+  box-shadow: 1px 3px 6px rgba(88, 88, 88, 0.2);
+}
+.chart-option__wrap .option-radio__item.item-posit > label:hover {
+  /* border: 1px solid #94a9fd; */
+  color: #617ff8;
+}
+.chart-option__wrap .option-radio__item.item-posit > input:checked + label {
+  border: 1px solid #617ff8;
+  background-color: #617ff8;
+  color: #fff;
+}
+.chart-option__wrap .option-radio__item.item-negat > label:hover {
+  /* border: 1px solid #ff918e; */
+  color: #fb6761;
+}
+.chart-option__wrap .option-radio__item.item-negat > input:checked + label {
+  border: 1px solid #fb6761;
+  background-color: #fb6761;
+  color: #fff;
+}
+
 .article-list-wrap .detail-item.item-title {
   line-height: 32px;
 }

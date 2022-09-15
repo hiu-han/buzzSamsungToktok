@@ -30,11 +30,10 @@
             <div class="article-inner">
               <div class="tab-wrap">
                 <ul class="tab-list">
-                  <li class="tab-item tab-brand now-on"><a href="./now.html">브랜드별</a></li>
-                  <li class="tab-item tab-device"><a href="./trend.html">디바이스별</a></li>
-                  <li class="tab-item tab-attribute"><a href="./hottest.html">속성별</a></li>
-                  <li class="tab-item tab-message"><a href="./hottest.html">Message</a></li>
-                  <!-- <li class="tab-item tab-preset"><a href="./userPreset.html">PRESET</a></li> -->
+                  <li class="tab-item tab-brand now-on"><a href="./status.html">STATUS</a></li>
+                  <li class="tab-item tab-device"><a href="./association.html">ASSOCIATION</a></li>
+                  <li class="tab-item tab-attribute"><a href="./contents.html">CONTENTS</a></li>
+                  <li class="tab-item tab-message"><a href="./search.html">SEARCH</a></li>
                 </ul>
                 <ul class="tab-info-list">
                   <li class="tab-info-item tab-now now-on">
@@ -115,11 +114,43 @@
           <article class="content-article article-channel-details">
             <div class="article-inner">
               <div class="article-title">
-                <h3 class="add-icon">CHANNEL DETAILS</h3>
+                <h3 class="add-icon icon--chart-table">CHANNEL DETAILS</h3>
               </div>
               <div class="article-content">
                 <div class="article-list-wrap detail-list-wrap">
                   <ul class="detail-list">
+
+                    <li class="chart-option__wrap">
+                      <div class="chart-option chart-option--radio">
+                        <ul class="option-radio__list">
+                          <li class="option-radio__item">
+                            <input type="radio" id="sample0101" name="sample01" checked>
+                            <label for="sample0101">브랜드</label>
+                          </li>
+                          <li class="option-radio__item">
+                            <input type="radio" id="sample0102" name="sample01">
+                            <label for="sample0102">유형별</label>
+                          </li>
+                          <li class="option-radio__item">
+                            <input type="radio" id="sample0103" name="sample01">
+                            <label for="sample0103">제품별</label>
+                          </li>
+                          <li class="option-radio__item item-posit">
+                            <input type="radio" id="sample0201" name="sample02" checked>
+                            <label for="sample0201">긍정</label>
+                          </li>
+                          <li class="option-radio__item item-negat">
+                            <input type="radio" id="sample0202" name="sample02">
+                            <label for="sample0202">부정</label>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="chart-option chart-option--unit">
+                        ( 단위: <span class="chart-unit-1">건</span>, <span class="chart-unit-2">메시지</span> 기준)
+                      </div>
+                    </li>
+
                     <li class="detail-item item-title">
                       <!-- 리스트 데이터 명 -->
                       <ul class="item-sub-list detail-title-list">
@@ -535,7 +566,7 @@
           <article class="content-article article-channel-details">
             <div class="article-inner">
               <div class="article-title">
-                <h3 class="add-icon">CHANNEL DETAILS</h3>
+                <h3 class="add-icon icon--chart-table">CHANNEL DETAILS</h3>
               </div>
               <div class="article-content">
                 <div class="article-card-wrap detail-card-wrap">
@@ -728,7 +759,7 @@
           <article class="content-article article-sentiment width-3-1">
             <div class="article-inner">
               <div class="article-title">
-                <h3 class="add-icon">SENTIMENT</h3>
+                <h3 class="add-icon icon--chart-pie">SENTIMENT</h3>
               </div>
               <div class="article-content">
                 <div class="article-content-top">
@@ -759,7 +790,7 @@
           <article class="content-article article-sentiment-channels width-3-2">
             <div class="article-inner">
               <div class="article-title">
-                <h3 class="add-icon">SENTIMENT BY CHANNELS</h3>
+                <h3 class="add-icon icon--chart-bar02">SENTIMENT BY CHANNELS</h3>
               </div>
               <div class="article-content">
                 <div class="article-content-top">
@@ -795,7 +826,7 @@
           <article class="content-article article-keyword-association width-4-2">
             <div class="article-inner">
               <div class="article-title">
-                <h3 class="add-icon">KEYWORD ASSOCIATION</h3>
+                <h3 class="add-icon icon--chart-bubble">KEYWORD ASSOCIATION</h3>
               </div>
               <div class="article-content">
                 <div class="article-content-top">
@@ -816,7 +847,7 @@
           <article class="content-article article-sentiment-keyword width-4-1">
             <div class="article-inner">
               <div class="article-title">
-                <h3 class="add-icon">SENTIMENT KEYWORD</h3>
+                <h3 class="add-icon icon--chart-rank">SENTIMENT KEYWORD</h3>
               </div>
               <div class="article-content">
                 <div class="article-content-top">
@@ -905,7 +936,7 @@
           <article class="content-article article-keyword-ranking width-4-1">
             <div class="article-inner">
               <div class="article-title">
-                <h3 class="add-icon">KEYWORD RANKING</h3>
+                <h3 class="add-icon icon--chart-rank">KEYWORD RANKING</h3>
               </div>
               <div class="article-content">
                 <div class="article-content-top">

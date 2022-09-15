@@ -1,0 +1,63 @@
+/* COMMON */
+.icon-btn {
+  display: inline-block;
+  cursor: pointer;
+}
+.icon-btn > button,
+.icon-btn > a {
+  display: block;
+  width: 34px;
+  height: 32px;
+  border-radius: 8px;
+  border: 1px solid #dadada;
+  background-color: #dadada;
+  background-image: url('../img/icon/icon-reset-01.svg');
+  background-position: center;
+  background-size: 14px;
+  background-repeat: no-repeat;
+}
+.icon-btn.btn--reset-zoom > button,
+.icon-btn.btn--reset-zoom > a {
+  background-image: url('../img/icon/icon-reset-01.svg');
+}
+.icon-btn.btn--reset-pos > button,
+.icon-btn.btn--reset-pos > a {
+  background-image: url('../img/icon/icon-reset-02.svg');
+}
+.icon-btn:hover > button,
+.icon-btn:hover > a {
+  border: 1px solid #cacaca;
+  background-color: #cacaca;
+  box-shadow: 1px 3px 6px rgba(88, 88, 88, 0.2);
+}
+
+/* ASSOCIATION page */
+#buttonBar > div {
+  display: inline-block;
+  margin-right: 10px;
+}
+#buttonBar > div:last-child {
+  margin-right: 0;
+}
+#buttonBar > div > p {
+  margin-right: 4px;
+}
+#buttonBar > div > p:last-child {
+  margin-right: 0;
+}
+
+#buttonBar .btn > button,
+#buttonBar .btn > a {
+  line-height: 32px;
+}
+
+.btn--size__wrap .btn > button {
+  padding: 0 8px;
+  font-size: 13px;
+}
+.btn--size__wrap .btn--size-plus > button {
+  border-radius: 20px 0 0 20px;
+}
+.btn--size__wrap .btn--size-minus > button {
+  border-radius: 0 20px 20px 0;
+}

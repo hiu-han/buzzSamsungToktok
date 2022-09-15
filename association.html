@@ -33,11 +33,10 @@
             <div class="article-inner">
               <div class="tab-wrap">
                 <ul class="tab-list">
-                  <li class="tab-item tab-brand"><a href="./now.html">브랜드별</a></li>
-                  <li class="tab-item tab-device now-on"><a href="./trend.html">디바이스별</a></li>
-                  <li class="tab-item tab-attribute"><a href="./hottest.html">속성별</a></li>
-                  <li class="tab-item tab-message"><a href="./hottest.html">Message</a></li>
-                  <!-- <li class="tab-item tab-preset"><a href="./userPreset.html">PRESET</a></li> -->
+                  <li class="tab-item tab-brand"><a href="./status.html">STATUS</a></li>
+                  <li class="tab-item tab-device now-on"><a href="./association.html">ASSOCIATION</a></li>
+                  <li class="tab-item tab-attribute"><a href="./contents.html">CONTENTS</a></li>
+                  <li class="tab-item tab-message"><a href="./search.html">SEARCH</a></li>
                 </ul>
                 <ul class="tab-info-list">
                   <li class="tab-info-item tab-now">
@@ -77,55 +76,50 @@
           <article class="content-article article-post-trend">
             <div class="article-inner">
               <div class="article-title">
-                <h3 class="add-icon">POST TREND</h3>
+                <h3 class="add-icon icon--chart-bubble">Association</h3>
               </div>
               <div class="article-content">
-                <div class="article-content-top">
-                  <div class="period-select">
-                    <ul class="period-list">
-                      <li class="period-item">DAILY</li>
-                      <li class="period-item">WEEKLY</li>
-                      <li class="period-item now-on">MONTHLY</li>
-                    </ul>
+                <div class="graph-box">
+                  <div id="buttonBar" class="control-btn__box">
+                    <div class="btn__wrap btn--reset__wrap">
+                      <p class="icon-btn btn--reset-zoom">
+                        <button id="resetZooomBtn" title="스크롤/확대 재설정"></button>
+                      </p>
+                      <p class="icon-btn btn--reset-pos">
+                        <button id="resetPosBtn" title="위치/크기 재설정"></button>
+                      </p>
+                    </div>
+                    <div class="btn__wrap btn--size__wrap">
+                      <p class="btn btn-2 btn--size-plus">
+                        <button id="nodePlus" title="노드 확대">+ 확대</button>
+                      </p>
+                      <p class="btn btn-2 btn--size-minus">
+                        <button id="nodeMinus" title="노드 축소">- 축소</button>
+                      </p>
+                    </div>
+                    <div class="input-number__wrap">
+                      <label class="number-set">
+                        <input type="number" id="setValue" class="number-set__input" value="30">
+                        <button id="setBtn" class="set number-set__btn">Set</button>
+                      </label>
+                    </div>
+                    <div class="select__wrap">
+                      <select name="chartType" id="chartType">
+                        <option value="network">Network</option>
+                        <option value="cloud">Cloud</option>
+                        <option value="drilldown">Drilldown</option>
+                      </select>
+                    </div>
+                    <div class="btn__wrap btn--down__wrap">
+                      <p class="btn btn-1">
+                        <button class="button-1" onClick="excelKeyowrd(); return false;">키워드 다운로드</button>
+                      </p>
+                    </div>
                   </div>
-                  <div class="color-info">
-                    <ul class="color-list">
-                      <li class="color-item color-item-sns">
-                        <p class="item-color"></p>
-                        <span class="item-name">SNS</span>
-                      </li>
-                      <li class="color-item color-item-community">
-                        <p class="item-color"></p>
-                        <span class="item-name">Community</span>
-                      </li>
-                      <li class="color-item color-item-blog">
-                        <p class="item-color"></p>
-                        <span class="item-name">Blog</span>
-                      </li>
-                      <li class="color-item color-item-cafe">
-                        <p class="item-color"></p>
-                        <span class="item-name">Cafe</span>
-                      </li>
-                      <li class="color-item color-item-news">
-                        <p class="item-color"></p>
-                        <span class="item-name">News</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
 
-                <div id="postTrdSwpContainer" class="article-chart-wrap swiper-container" dir="rtl">
-                  <div class="trend-chart-wrap swiper-wrapper">
-                    <div class="trend-chart-list swiper-slide" dir="ltr"></div>
-                    <div class="trend-chart-list swiper-slide" dir="ltr"></div>
-                    <div class="trend-chart-list swiper-slide" dir="ltr"></div>
-                    <div class="trend-chart-list swiper-slide" dir="ltr"></div>
-                    <div class="trend-chart-list swiper-slide" dir="ltr"></div>
-                  </div>
-                  <div class="slide-btn-wrap">
-                    <p class="slide-btn slide-left swiper-button-next"></p>
-                    <p class="slide-btn slide-right swiper-button-prev"></p>
-                  </div>
+                  <div id="typeDiv"></div>
+
+                  <svg width="900" height="600"></svg>
                 </div>
               </div>
             </div>
