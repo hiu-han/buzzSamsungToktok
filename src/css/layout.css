@@ -32,8 +32,6 @@
 }
 .btn-1:hover > button,
 .btn-1:hover > a {
-  /* border: 1px solid #502da1; */
-  /* background-color: #502da1; */
   border: 1px solid #7553c4;
   background-color: #7553c4;
 }
@@ -45,8 +43,8 @@
 }
 .btn-2:hover > button,
 .btn-2:hover > a {
-  border: 1px solid #e8e8e8;
-  background-color: #e8e8e8;
+  border: 1px solid #e5e5e5;
+  background-color: #e5e5e5;
 }
 
 .cls-btn {

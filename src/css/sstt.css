@@ -17,18 +17,10 @@
   background-size: 14px;
   background-repeat: no-repeat;
 }
-.icon-btn.btn--reset-zoom > button,
-.icon-btn.btn--reset-zoom > a {
-  background-image: url('../img/icon/icon-reset-01.svg');
-}
-.icon-btn.btn--reset-pos > button,
-.icon-btn.btn--reset-pos > a {
-  background-image: url('../img/icon/icon-reset-02.svg');
-}
 .icon-btn:hover > button,
 .icon-btn:hover > a {
-  border: 1px solid #e8e8e8;
-  background-color: #e8e8e8;
+  border: 1px solid #e5e5e5;
+  background-color: #e5e5e5;
   box-shadow: 1px 3px 6px rgba(88, 88, 88, 0.2);
 }
 
@@ -62,10 +54,11 @@
   color: #313131;
 }
 .input-btn__wrap .input-btn:hover > input {
+  border: 1px solid #e5e5e5;
   box-shadow: 1px 3px 6px rgba(100, 100, 100, 0.1);
 }
 .input-btn__wrap .input-btn:hover > button {
-  background-color: #e8e8e8;
+  background-color: #e5e5e5;
 }
 .input-btn__wrap .input-btn > input:focus {
   border: 1px solid #866ac8;
@@ -253,6 +246,14 @@ select > option {
 }
 #buttonBar > div > p:last-child {
   margin-right: 0;
+}
+.icon-btn.btn--reset-zoom > button,
+.icon-btn.btn--reset-zoom > a {
+  background-image: url('../img/icon/icon-reset-01.svg');
+}
+.icon-btn.btn--reset-pos > button,
+.icon-btn.btn--reset-pos > a {
+  background-image: url('../img/icon/icon-reset-02.svg');
 }
 #buttonBar .btn > button,
 #buttonBar .btn > a {
