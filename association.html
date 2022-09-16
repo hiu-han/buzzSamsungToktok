@@ -97,10 +97,10 @@
                         <button id="nodeMinus" title="노드 축소">- 축소</button>
                       </p>
                     </div>
-                    <div class="input-number__wrap">
-                      <label class="number-set">
-                        <input type="number" id="setValue" class="number-set__input" value="30">
-                        <button id="setBtn" class="set number-set__btn">Set</button>
+                    <div class="input-btn__wrap input-number__wrap">
+                      <label class="btn input-btn input-btn--number">
+                        <input type="number" id="setValue" class="input-btn__input" value="30">
+                        <button id="setBtn" class="input-btn__btn">Set</button>
                       </label>
                     </div>
                     <div class="select__wrap">
@@ -114,6 +114,35 @@
                       <p class="btn btn-1">
                         <button class="button-1" onClick="excelKeyowrd(); return false;">키워드 다운로드</button>
                       </p>
+                    </div>
+                  </div>
+
+                  <div id="optionChkBar" class="option-chk__box">
+                    <div class="btn__wrap chk-btn__wrap btn-option__wrap">
+                      <label class="chk-btn chk-btn--all">
+                        <input type="checkbox" id="" class="chk-btn__input" checked>
+                        <span class="chk-btn__txt">전체</span>
+                      </label>
+                      <label class="chk-btn chk-btn--attribute chk-btn--yellow">
+                        <input type="checkbox" id="" class="chk-btn__input">
+                        <span class="chk-btn__txt">Attribute</span>
+                      </label>
+                      <label class="chk-btn chk-btn--brand chk-btn--green">
+                        <input type="checkbox" id="" class="chk-btn__input">
+                        <span class="chk-btn__txt">Brand</span>
+                      </label>
+                      <label class="chk-btn chk-btn--positive chk-btn--blue">
+                        <input type="checkbox" id="" class="chk-btn__input">
+                        <span class="chk-btn__txt">Positive</span>
+                      </label>
+                      <label class="chk-btn chk-btn--negative chk-btn--red">
+                        <input type="checkbox" id="" class="chk-btn__input">
+                        <span class="chk-btn__txt">Negative</span>
+                      </label>
+                      <label class="chk-btn chk-btn--neutral chk-btn--purple">
+                        <input type="checkbox" id="" class="chk-btn__input">
+                        <span class="chk-btn__txt">Neutral</span>
+                      </label>
                     </div>
                   </div>
 

@@ -1,4 +1,5 @@
-/* COMMON */
+/** COMMON **/
+/* button, input 관련 */
 .icon-btn {
   display: inline-block;
   cursor: pointer;
@@ -9,8 +10,8 @@
   width: 34px;
   height: 32px;
   border-radius: 8px;
-  border: 1px solid #dadada;
-  background-color: #dadada;
+  border: 1px solid #e1e1e1;
+  background-color: #e1e1e1;
   background-image: url('../img/icon/icon-reset-01.svg');
   background-position: center;
   background-size: 14px;
@@ -26,15 +27,223 @@
 }
 .icon-btn:hover > button,
 .icon-btn:hover > a {
-  border: 1px solid #cacaca;
-  background-color: #cacaca;
+  border: 1px solid #e8e8e8;
+  background-color: #e8e8e8;
   box-shadow: 1px 3px 6px rgba(88, 88, 88, 0.2);
 }
 
+/* input & button */
+.input-btn__wrap {
+  display: inline-block;
+  vertical-align: middle;
+}
+.input-btn__wrap .input-btn {
+  display: inline-block;
+  font-size: 0;
+  cursor: pointer;
+}
+.input-btn__wrap .input-btn > input {
+  width: auto;
+  height: 34px;
+  border-radius: 6px 0 0 6px;
+  border: 1px solid #e1e1e1;
+  font-size: 13px;
+  text-indent: 8px;
+}
+.input-btn__wrap .input-btn > input[type='number'] {
+  width: 65px;
+}
+.input-btn__wrap .input-btn > button {
+  display: inline-block;
+  padding: 0 14px;
+  border-radius: 0 6px 6px 0;
+  border: 1px solid #e1e1e1;
+  background-color: #e1e1e1;
+  color: #313131;
+}
+.input-btn__wrap .input-btn:hover > input {
+  box-shadow: 1px 3px 6px rgba(100, 100, 100, 0.1);
+}
+.input-btn__wrap .input-btn:hover > button {
+  background-color: #e8e8e8;
+}
+.input-btn__wrap .input-btn > input:focus {
+  border: 1px solid #866ac8;
+}
+.input-btn__wrap .input-btn > input:focus + button {
+  border: 1px solid #866ac8;
+  background-color: #866ac8;
+  color: #fff;
+}
+
+/* chk-btn */
+.chk-btn-wrap {
+}
+.chk-btn {
+  display: inline-block;
+  margin-right: 8px;
+  font-size: 13px;
+  cursor: pointer;
+}
+.chk-btn:last-child {
+  margin-right: 0;
+}
+.chk-btn > input[type='checkbox'],
+.chk-btn > .chk-btn__input {
+  display: none;
+}
+.chk-btn > .chk-btn__txt {
+  display: inline-block;
+  position: relative;
+  min-width: 66px;
+  padding: 3px 8px 2px 24px;
+  border-radius: 15px;
+  border: 1px solid #aaa;
+  font-weight: 500;
+  color: #aaa;
+  opacity: 0.7;
+}
+.chk-btn > .chk-btn__txt::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  border: 1px solid #aaa;
+}
+.chk-btn > input[type='checkbox']:checked + .chk-btn__txt {
+  border: 1px solid #717171;
+  background-color: #717171;
+  color: #fff;
+  box-shadow: 1px 3px 6px rgba(100, 100, 100, 0.1);
+  opacity: 1;
+}
+.chk-btn > input[type='checkbox']:checked + .chk-btn__txt::after {
+  border: 1px solid #fff;
+  background-color: #515151;
+}
+.chk-btn.chk-btn--red > .chk-btn__txt {
+  border: 1px solid rgb(255, 167, 151);
+  color: tomato;
+}
+.chk-btn.chk-btn--red > .chk-btn__txt::after {
+  border: 1px solid tomato;
+}
+.chk-btn.chk-btn--red > input[type='checkbox']:checked + .chk-btn__txt {
+  border: 1px solid rgb(255, 123, 99);
+  background-color: rgb(255, 123, 99);
+  color: #fff;
+}
+.chk-btn.chk-btn--red > input[type='checkbox']:checked + .chk-btn__txt::after {
+  background-color: tomato;
+}
+.chk-btn.chk-btn--yellow > .chk-btn__txt {
+  border: 1px solid rgb(255, 202, 103);
+  color: rgb(255, 191, 72);
+}
+.chk-btn.chk-btn--yellow > .chk-btn__txt::after {
+  border: 1px solid rgb(255, 191, 72);
+}
+.chk-btn.chk-btn--yellow > input[type='checkbox']:checked + .chk-btn__txt {
+  border: 1px solid rgb(255, 200, 97);
+  background-color: rgb(255, 200, 97);
+  color: #fff;
+}
+.chk-btn.chk-btn--yellow
+  > input[type='checkbox']:checked
+  + .chk-btn__txt::after {
+  background-color: rgb(255, 191, 72);
+}
+.chk-btn.chk-btn--green > .chk-btn__txt {
+  border: 1px solid rgb(131, 238, 128);
+  color: rgb(77, 187, 73);
+}
+.chk-btn.chk-btn--green > .chk-btn__txt::after {
+  border: 1px solid rgb(77, 187, 73);
+}
+.chk-btn.chk-btn--green > input[type='checkbox']:checked + .chk-btn__txt {
+  border: 1px solid rgb(102, 209, 98);
+  background-color: rgb(102, 209, 98);
+  color: #fff;
+}
+.chk-btn.chk-btn--green
+  > input[type='checkbox']:checked
+  + .chk-btn__txt::after {
+  background-color: rgb(77, 187, 73);
+}
+.chk-btn.chk-btn--blue > .chk-btn__txt {
+  border: 1px solid rgb(159, 192, 255);
+  color: cornflowerblue;
+}
+.chk-btn.chk-btn--blue > .chk-btn__txt::after {
+  border: 1px solid cornflowerblue;
+}
+.chk-btn.chk-btn--blue > input[type='checkbox']:checked + .chk-btn__txt {
+  border: 1px solid rgb(121, 163, 240);
+  background-color: rgb(121, 163, 240);
+  color: #fff;
+}
+.chk-btn.chk-btn--blue > input[type='checkbox']:checked + .chk-btn__txt::after {
+  background-color: cornflowerblue;
+}
+.chk-btn.chk-btn--purple > .chk-btn__txt {
+  border: 1px solid rgb(190, 105, 230);
+  color: rgb(124, 39, 163);
+}
+.chk-btn.chk-btn--purple > .chk-btn__txt::after {
+  border: 1px solid rgb(124, 39, 163);
+}
+.chk-btn.chk-btn--purple > input[type='checkbox']:checked + .chk-btn__txt {
+  border: 1px solid rgb(148, 63, 187);
+  background-color: rgb(148, 63, 187);
+  color: #fff;
+}
+.chk-btn.chk-btn--purple
+  > input[type='checkbox']:checked
+  + .chk-btn__txt::after {
+  background-color: rgb(124, 39, 163);
+}
+
+/* input - select */
+select {
+  display: inline-block;
+  width: auto;
+  height: 34px;
+  padding: 0 24px 0 8px;
+  margin-right: 4px;
+  border-radius: 6px;
+  border: 1px solid #e1e1e1;
+  background-image: url('../img/icon/icon-select-arrow.svg');
+  background-repeat: no-repeat;
+  background-position: 90% 53%;
+  background-size: 9px;
+}
+select:focus {
+  background-image: url('../img/icon/icon-select-arrow-633fb8.svg');
+  outline: 1px solid #866ac8;
+}
+select > option {
+  line-height: 1.5;
+}
+
 /* ASSOCIATION page */
+.graph-box > * {
+}
+
+#buttonBar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  text-align: center;
+}
 #buttonBar > div {
   display: inline-block;
-  margin-right: 10px;
+  /* margin-right: 14px; */
 }
 #buttonBar > div:last-child {
   margin-right: 0;
@@ -45,12 +254,10 @@
 #buttonBar > div > p:last-child {
   margin-right: 0;
 }
-
 #buttonBar .btn > button,
 #buttonBar .btn > a {
   line-height: 32px;
 }
-
 .btn--size__wrap .btn > button {
   padding: 0 8px;
   font-size: 13px;
@@ -60,4 +267,13 @@
 }
 .btn--size__wrap .btn--size-minus > button {
   border-radius: 0 20px 20px 0;
+}
+
+#optionChkBar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  margin: 14px 0 14px;
+  text-align: center;
 }

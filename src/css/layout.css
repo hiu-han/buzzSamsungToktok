@@ -13,7 +13,7 @@
 .btn > a {
   display: block;
   padding: 0 16px;
-  border-radius: 8px;
+  border-radius: 6px;
   border: 1px solid #866ac8;
   background-color: #fff;
   line-height: 36px;
@@ -22,7 +22,7 @@
 .btn:hover > button,
 .btn:hover > a {
   background-color: #eeeaf7;
-  box-shadow: 1px 3px 6px rgba(88, 88, 88, 0.2);
+  box-shadow: 1px 3px 6px rgba(88, 88, 88, 0.1);
 }
 .btn-1 > button,
 .btn-1 > a {
@@ -32,19 +32,21 @@
 }
 .btn-1:hover > button,
 .btn-1:hover > a {
-  border: 1px solid #502da1;
-  background-color: #502da1;
+  /* border: 1px solid #502da1; */
+  /* background-color: #502da1; */
+  border: 1px solid #7553c4;
+  background-color: #7553c4;
 }
 .btn-2 > button,
 .btn-2 > a {
-  border: 1px solid #dadada;
-  background-color: #dadada;
+  border: 1px solid #e1e1e1;
+  background-color: #e1e1e1;
   color: #313131;
 }
 .btn-2:hover > button,
 .btn-2:hover > a {
-  border: 1px solid #cacaca;
-  background-color: #cacaca;
+  border: 1px solid #e8e8e8;
+  background-color: #e8e8e8;
 }
 
 .cls-btn {
