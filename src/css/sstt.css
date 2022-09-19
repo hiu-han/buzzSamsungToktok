@@ -223,6 +223,88 @@ select > option {
   line-height: 1.5;
 }
 
+/* STATUS page */
+.detail-list {
+  position: relative;
+}
+.chart-option__wrap {
+  position: relative;
+  padding-right: 20px;
+  margin: -14px 0 18px;
+  text-align: right;
+}
+.chart-option__wrap > .chart-option {
+  display: inline-block;
+  margin-left: 24px;
+}
+.chart-option__wrap > .chart-option:first-child {
+  margin-left: 0;
+}
+.chart-option__wrap > .chart-option--radio {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+.chart-option__wrap > .chart-option--radio > .option-radio__list {
+  border-radius: 20px;
+  background-color: #efefef;
+  font-size: 0;
+}
+.chart-option__wrap .option-radio__item {
+  display: inline-block;
+  position: relative;
+  /* margin-right: 3px; */
+  margin-right: 0;
+}
+.chart-option__wrap .option-radio__item:last-child {
+  margin-right: 0;
+}
+.chart-option__wrap .option-radio__item > input {
+  display: none;
+}
+.chart-option__wrap .option-radio__item > label {
+  display: inline-block;
+  padding: 5px 11px;
+  border-radius: 20px;
+  /* border: 1px solid #eaeaea; */
+  border: 1px solid rgba(255, 255, 255, 0);
+  font-size: 13px;
+  font-weight: 500;
+  color: #818181;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.chart-option__wrap .option-radio__item > label:hover {
+  /* border: 1px solid #866ac8; */
+  color: #866ac8;
+}
+.chart-option__wrap .option-radio__item > input:checked + label {
+  border: 1px solid #866ac8;
+  /* background-color: #dcd4ef; */
+  background-color: #866ac8;
+  color: #fff;
+  box-shadow: 1px 3px 6px rgba(88, 88, 88, 0.2);
+}
+.chart-option__wrap .option-radio__item.item-posit > label:hover {
+  /* border: 1px solid #94a9fd; */
+  color: #617ff8;
+}
+.chart-option__wrap .option-radio__item.item-posit > input:checked + label {
+  border: 1px solid #617ff8;
+  background-color: #617ff8;
+  color: #fff;
+}
+.chart-option__wrap .option-radio__item.item-negat > label:hover {
+  /* border: 1px solid #ff918e; */
+  color: #fb6761;
+}
+.chart-option__wrap .option-radio__item.item-negat > input:checked + label {
+  border: 1px solid #fb6761;
+  background-color: #fb6761;
+  color: #fff;
+}
+
 /* ASSOCIATION page */
 .graph-box > * {
 }
@@ -278,3 +360,7 @@ select > option {
   margin: 14px 0 14px;
   text-align: center;
 }
+
+/* CONTENTS page */
+
+/* SEARCH page */
