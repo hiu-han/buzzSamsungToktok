@@ -8,6 +8,31 @@
 @import url('./lib.css');
 @import url('./sstt.css');
 
+/** className 표기
+.mentioned-keyword {
+  .mentioned-keyword__wrap {
+    .mentioned-keyword__list {
+      .mentioned-keyword__item {
+        .mentioned-keyword__num {}
+        .mentioned-keyword__text {
+          .mentioned-keyword__date.date--start {}
+          .mentioned-keyword__date.date--end {}
+        }
+        .mentioned-keyword__icon.icon--cat {}
+        .mentioned-keyword__icon.icon--dog {}
+        .mentioned-keyword__icon.icon--lion {}
+      }
+    }
+  }
+}
+
+**/
+
+/** ID 표기
+#mentKwrdDate
+#mentKwrdText
+**/
+
 /** SAMPLE **/
 .chart-dummy.engagement {
   width: 190px;

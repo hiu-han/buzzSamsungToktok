@@ -318,7 +318,6 @@ select > option {
 }
 #buttonBar > div {
   display: inline-block;
-  /* margin-right: 14px; */
 }
 #buttonBar > div:last-child {
   margin-right: 0;
@@ -361,6 +360,40 @@ select > option {
   text-align: center;
 }
 
-/* CONTENTS page */
+/** CONTENTS page **/
 
-/* SEARCH page */
+/** SEARCH page **/
+.article-info-mentioned {
+  display: flex;
+  flex-direction: column;
+  /* column으로 흐름이 바뀌었으니 상하 위치를 ALIGN-CONTENT로 잡는 게 아니라
+  JUSTIFY-CONTENT로 잡아야한다는 걸 반복해서 잊지 말자 */
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 160px;
+  padding-bottom: 30px;
+}
+.article-info-mentioned .item-mentioned {
+  margin-bottom: 2px;
+}
+.article-info-mentioned .item-mentioned__num {
+  display: inline-block;
+  font-family: 'Spoqa Han Sans Neo', 'Noto Sans KR', Apple Gothic, 'sans-serif';
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0;
+  vertical-align: bottom;
+}
+.article-info-mentioned .item-mentioned__text {
+  display: inline-block;
+  margin-bottom: 6px;
+  font-size: 18px;
+  font-weight: 700;
+  vertical-align: bottom;
+}
+.article-info-mentioned > .item-period {
+  font-size: 14px;
+  font-weight: 500;
+  color: #afa0d3;
+}
