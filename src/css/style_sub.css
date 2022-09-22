@@ -220,9 +220,6 @@
     padding: 48px 20px 20px;
     overflow-y: scroll;
   }
-  .usr-set-item .set-info-wrap {
-    /* padding-left: 30px; */
-  }
   .usr-set-wrap .usr-set-item .usr-set-item-cls {
     display: inline-block;
     position: absolute;
