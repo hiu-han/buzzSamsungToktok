@@ -18,6 +18,7 @@
   background-color: #fff;
   line-height: 36px;
   color: #633fb8;
+  transition: 0.2s;
 }
 .btn:hover > button,
 .btn:hover > a {
@@ -310,7 +311,7 @@ nav .nav-item:hover::after {
   width: 230px;
   height: 38px;
   padding-right: 10px;
-  border-radius: 10px;
+  border-radius: 6px;
   text-indent: 14px;
   border: 1px solid #ddd;
 }
@@ -576,6 +577,7 @@ input[type='date']:hover {
 }
 .detail-btn-area .detail-preset-wrap {
   display: inline-block;
+  margin-right: 14px;
   font-size: 0;
   vertical-align: middle;
 }
@@ -626,8 +628,8 @@ input[type='date']:hover {
 .detail-btn-area .cancel-btn {
   display: none;
   width: 100px;
-  height: 40px;
-  line-height: 40px;
+  height: 42px;
+  line-height: 42px;
   background-color: #ddd;
   border-radius: 8px;
   border: none;
@@ -638,23 +640,10 @@ input[type='date']:hover {
 .detail-btn-area .cancel-btn:hover {
   background-color: #e3e3e3;
 }
-.detail-btn-area .submit-btn {
-  display: inline-block;
-  width: 196px;
-  height: 40px;
+.detail-btn-area .submit-btn > button {
+  width: 100%;
+  /* width: 196px; */
   line-height: 40px;
-  margin-left: 14px;
-  margin-right: 14px;
-  background-color: #3dbbc4;
-  border: none;
-  border-radius: 8px;
-  text-align: center;
-  font-size: 14px;
-  color: #fff;
-  cursor: pointer;
-}
-.detail-btn-area .submit-btn:hover {
-  background-color: #048ea0;
 }
 
 /** FOOTER **/
@@ -855,7 +844,7 @@ address > .copyright {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 #showAllModal,
@@ -1418,7 +1407,7 @@ h3.logo {
 .login-form li > input:focus {
   border-radius: 0;
   border: none;
-  border-bottom: 1px solid #048ea0;
+  border-bottom: 1px solid #866ac8;
 }
 
 .login-form .btn-wrap {
@@ -1436,7 +1425,7 @@ h3.logo {
   border-radius: 8px;
 }
 #loginBtn {
-  background-color: #3dbbc4;
+  background-color: #633fb8;
 }
 .login-form .cancel-btn {
   background-color: rgb(200, 200, 200);
@@ -1453,7 +1442,7 @@ h3.logo {
   transition: 0.4s;
 }
 #loginBtn:hover {
-  background-color: #048ea0;
+  background-color: #866ac8;
 }
 .login-form .cancel-btn:hover {
   background-color: rgb(214, 214, 214);
@@ -1898,7 +1887,8 @@ h3.logo {
     order: 3;
   }
   .detail-area-wrap .detail-channel-area > h3 {
-    display: inline-block;
+    /* display: inline-block; */
+    display: block;
     position: relative;
     top: unset;
     left: unset;
@@ -1909,7 +1899,12 @@ h3.logo {
   }
   .detail-area-wrap .detail-channel-area > h3::after {
     content: '';
-    display: inline-block;
+    /* display: inline-block; */
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
     width: 12px;
     height: 12px;
     margin-left: 8px;
@@ -2039,10 +2034,12 @@ h3.logo {
   }
   .detail-btn-area .cancel-btn {
     display: inline-block;
+    width: calc(40% - 4px);
   }
   .detail-btn-area .submit-btn {
     display: inline-block;
     margin-right: 0;
+    width: calc(60% - 4px);
   }
 
   /** FOOTER 480px **/

@@ -44,6 +44,7 @@
 }
 .input-btn__wrap .input-btn > input[type='number'] {
   width: 65px;
+  vertical-align: top;
 }
 .input-btn__wrap .input-btn > button {
   display: inline-block;
