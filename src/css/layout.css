@@ -126,10 +126,10 @@ input[type='checkbox'] + label::before {
   content: '';
   display: inline-block;
   position: absolute;
-  top: 9px;
+  top: 8px;
   left: 0px;
   transform: translateY(-50%);
-  width: 16px;
+  width: 14px;
   height: 100%;
   background-image: url('../img/icon/icon-checkbox-default.svg');
   background-repeat: no-repeat;
@@ -416,7 +416,7 @@ nav .nav-item:hover::after {
 
 .detail-channel-area .search-group {
   display: inline-block;
-  width: 20%;
+  width: 25%;
   padding: 0px 1vw;
   border-right: 1px solid #ddd;
   vertical-align: top;
@@ -432,7 +432,7 @@ nav .nav-item:hover::after {
 }
 .search-group > .group-title {
   display: inline-block;
-  margin: 0 14px 8px 4px;
+  margin: 0 14px 12px 4px;
   font-size: 15px;
   font-weight: 600;
 }
@@ -465,7 +465,10 @@ nav .nav-item:hover::after {
 }
 .search-group-box .input-group > label,
 .search-group-box .input-group > input {
-  font-size: 13px;
+  font-size: 14px;
+}
+.search-group-box .all-btn input[type='checkbox'] + label::before {
+  top: 6px;
 }
 .search-group-box .input-group > label,
 .search-group-box .input-group > label > span {
