@@ -8,6 +8,7 @@
   display: inline-block;
   font-size: 14px;
   cursor: pointer;
+  text-align: center;
 }
 .btn > button,
 .btn > a {
@@ -1742,6 +1743,8 @@ h3.logo {
   font-size: 13px;
   font-weight: 500;
 }
+
+/* table 원문 내용 모달 */
 
 @media all and (max-width: 1400px) {
   /* HEADER > search area 1400px */

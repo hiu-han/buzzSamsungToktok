@@ -373,6 +373,137 @@ select > option {
 }
 
 /** CONTENTS page **/
+/* detail table */
+.table-search {
+  margin-bottom: 8px;
+  text-align: right;
+}
+.table-search .search-select-box,
+.table-search .sarch-word-box {
+  display: inline-block;
+  text-align: left;
+}
+.detail-table .table-search .search-word-box {
+  margin-right: 8px;
+}
+
+.detail-table table {
+  table-layout: fixed;
+  width: 100%;
+}
+.detail-table table tr {
+  border-bottom: 1px solid #fff;
+}
+.detail-table table th {
+  font-weight: 600;
+}
+.detail-table table tr th,
+.detail-table table tr td {
+  height: 44px;
+  padding-right: 4px;
+  vertical-align: middle;
+  background-color: #f4f6f7;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-wrap: normal;
+}
+.detail-table table thead tr th {
+  border-bottom: 3px solid #fff;
+  background-color: #f1f2f2;
+}
+.detail-table table tbody tr:nth-child(odd) th,
+.detail-table table tbody tr:nth-child(odd) td {
+  background-color: #fafcfd;
+}
+.detail-table table th.item-value.item-center,
+.detail-table table td.item-value.item-center {
+  text-align: center;
+}
+.detail-table table td.item-value.item-left {
+  text-align: left;
+  text-indent: 14px;
+}
+.detail-table table td.item-value.item-posit {
+  color: #617ff8;
+}
+.detail-table table td.item-value.item-negat {
+  color: #fb6761;
+}
+.detail-table table td.item-value-message {
+  color: #636566;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.detail-table table td.item-value-message:hover {
+  color: #313131;
+  font-weight: 500;
+}
+.detail-table table td.item-value-title {
+  cursor: pointer;
+  transition: 0.2s;
+}
+.detail-table table td.item-value-title:hover {
+  color: #866ac8;
+  text-decoration: underline;
+}
+
+/* .detail-table table  */
+
+.detail-table .pagination-list {
+  margin-top: 24px;
+  text-align: center;
+}
+.detail-table .pagination-list > li {
+  display: inline-block;
+  text-align: center;
+  margin-left: 8px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+.detail-table .pagination-list > li > button {
+  background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+}
+.detail-table .pagination-list > li.page-arrow > button {
+  width: 22px;
+  height: 22px;
+  text-indent: -99999px;
+  background-image: url('../img/icon/icon-arrow_next-866ac8.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  overflow: hidden;
+  border: none;
+}
+.detail-table .pagination-list > li.page-arrow.page-prev > button {
+  transform: rotate(180deg);
+}
+.input-info-table .pagination-list > li.page-arrow.disable > button {
+  cursor: auto;
+  opacity: 0.1;
+}
+
+.detail-table .pagination-list .page-count {
+  position: relative;
+  font-size: 14px;
+  color: #aaa;
+}
+.detail-table .pagination-list .page-count.now-on {
+  font-weight: 600;
+  color: #555;
+}
+.detail-table .pagination-list .page-count.now-on::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 1px;
+  background-color: #555;
+}
 
 /** SEARCH page **/
 .article-info-mentioned {

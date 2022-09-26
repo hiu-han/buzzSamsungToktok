@@ -5,6 +5,7 @@
 @import url('./font-embedded.css');
 @import url('./common.css');
 @import url('./layout.css');
+@import url('./modal.css');
 @import url('./lib.css');
 @import url('./sstt.css');
 
@@ -88,6 +89,48 @@
 
 button:hover {
   cursor: pointer;
+}
+
+/* 검색어 박스 */
+.search-word-box {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: top;
+}
+.search-word-box .input-search-word input[type='text'] {
+  width: auto;
+  height: 34px;
+  border-radius: 6px 0 0 6px;
+  border: 1px solid #dadada;
+  text-indent: 8px;
+}
+.search-word-box .search-word__btn {
+  padding: 0 18px;
+  border-radius: 0 6px 6px 0;
+  border: 1px solid #633fb8;
+  line-height: 32px;
+}
+.search-word-box .search-word__btn.btn-1 {
+  background-color: #633fb8;
+  color: #fff;
+}
+.search-word-box .search-word__btn.btn-1:hover {
+  border: 1px solid #7553c4;
+  background-color: #7553c4;
+}
+.search-word-box .search-word__btn.btn-2 {
+  border: 1px solid #e1e1e1;
+  background-color: #e1e1e1;
+  color: #313131;
+}
+.search-word-box .search-word__btn.btn-2:hover {
+  border: 1px solid #e5e5e5;
+  background-color: #e5e5e5;
+}
+
+.table-search .btn > button,
+.table-search .btn > a {
+  line-height: 32px;
 }
 
 /* section */
