@@ -230,9 +230,10 @@ select > option {
 }
 .chart-option__wrap {
   position: relative;
-  padding-right: 20px;
+  /* padding-right: 20px; */
+  min-height: 24px;
   margin: -14px 0 18px;
-  text-align: right;
+  /* text-align: right; */
 }
 .chart-option__wrap > .chart-option {
   display: inline-block;
@@ -246,6 +247,7 @@ select > option {
   top: 50%;
   right: 50%;
   transform: translate(50%, -50%);
+  text-align: center;
 }
 .chart-option__wrap > .chart-option--radio > .option-radio__list {
   border-radius: 20px;
@@ -304,6 +306,15 @@ select > option {
   border: 1px solid #fb6761;
   background-color: #fb6761;
   color: #fff;
+}
+
+.chart-option__wrap .chart-option--unit {
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  transform: translateY(-50%);
+  text-align: right;
+  font-size: 13px;
 }
 
 /* ASSOCIATION page */

@@ -1256,8 +1256,8 @@ body {
 }
 .article-content-top .period-list > .period-item.now-on,
 .article-content-top .method-list > .method-item.now-on {
-  border: 1px solid #3dbbc4;
-  color: #3dbbc4;
+  border: 1px solid #866ac8;
+  color: #633fb8;
   cursor: default;
 }
 
@@ -1538,7 +1538,7 @@ body {
   border: 1px solid #fafafa;
 }
 .hottest-item.item-subs > .contents-area:hover {
-  border: 1px solid #3dbbc4;
+  border: 1px solid #866ac8;
 }
 .hottest-item > .contents-area > * {
   display: inline-block;
