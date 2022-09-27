@@ -71,8 +71,6 @@
 }
 
 /* chk-btn */
-.chk-btn-wrap {
-}
 .chk-btn {
   display: inline-block;
   margin-right: 8px;
@@ -230,10 +228,9 @@ select > option {
 }
 .chart-option__wrap {
   position: relative;
-  /* padding-right: 20px; */
-  min-height: 24px;
-  margin: -14px 0 18px;
-  /* text-align: right; */
+  min-height: 18px;
+  margin: -14px 0 20px;
+  text-align: center;
 }
 .chart-option__wrap > .chart-option {
   display: inline-block;
@@ -257,7 +254,6 @@ select > option {
 .chart-option__wrap .option-radio__item {
   display: inline-block;
   position: relative;
-  /* margin-right: 3px; */
   margin-right: 0;
 }
 .chart-option__wrap .option-radio__item:last-child {
@@ -270,7 +266,6 @@ select > option {
   display: inline-block;
   padding: 5px 11px;
   border-radius: 20px;
-  /* border: 1px solid #eaeaea; */
   border: 1px solid rgba(255, 255, 255, 0);
   font-size: 13px;
   font-weight: 500;
@@ -279,18 +274,15 @@ select > option {
   cursor: pointer;
 }
 .chart-option__wrap .option-radio__item > label:hover {
-  /* border: 1px solid #866ac8; */
   color: #866ac8;
 }
 .chart-option__wrap .option-radio__item > input:checked + label {
   border: 1px solid #866ac8;
-  /* background-color: #dcd4ef; */
   background-color: #866ac8;
   color: #fff;
   box-shadow: 1px 3px 6px rgba(88, 88, 88, 0.2);
 }
 .chart-option__wrap .option-radio__item.item-posit > label:hover {
-  /* border: 1px solid #94a9fd; */
   color: #617ff8;
 }
 .chart-option__wrap .option-radio__item.item-posit > input:checked + label {
@@ -299,7 +291,6 @@ select > option {
   color: #fff;
 }
 .chart-option__wrap .option-radio__item.item-negat > label:hover {
-  /* border: 1px solid #ff918e; */
   color: #fb6761;
 }
 .chart-option__wrap .option-radio__item.item-negat > input:checked + label {
@@ -323,8 +314,9 @@ select > option {
 
 #buttonBar {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 14px;
   width: 100%;
   text-align: center;
 }
@@ -366,7 +358,7 @@ select > option {
 #optionChkBar {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 14px;
   width: 100%;
   margin: 14px 0 14px;
   text-align: center;
@@ -375,7 +367,7 @@ select > option {
 /** CONTENTS page **/
 /* detail table */
 .table-search {
-  margin-bottom: 8px;
+  margin-bottom: 12px;
   text-align: right;
 }
 .table-search .search-select-box,
@@ -386,13 +378,19 @@ select > option {
 .detail-table .table-search .search-word-box {
   margin-right: 8px;
 }
+.table-search .btn > button,
+.table-search .btn > a {
+  line-height: 32px;
+}
 
 .detail-table table {
   table-layout: fixed;
   width: 100%;
+  min-width: 800px;
 }
 .detail-table table tr {
   border-bottom: 1px solid #fff;
+  background-color: #f4f6f7;
 }
 .detail-table table th {
   font-weight: 600;
@@ -402,7 +400,6 @@ select > option {
   height: 44px;
   padding-right: 4px;
   vertical-align: middle;
-  background-color: #f4f6f7;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -412,9 +409,11 @@ select > option {
   border-bottom: 3px solid #fff;
   background-color: #f1f2f2;
 }
-.detail-table table tbody tr:nth-child(odd) th,
-.detail-table table tbody tr:nth-child(odd) td {
+.detail-table table tbody tr:nth-child(odd) {
   background-color: #fafcfd;
+}
+.detail-table table tr td {
+  color: #515151;
 }
 .detail-table table th.item-value.item-center,
 .detail-table table td.item-value.item-center {
@@ -423,6 +422,21 @@ select > option {
 .detail-table table td.item-value.item-left {
   text-align: left;
   text-indent: 14px;
+}
+.detail-table table th.item-value-num {
+  letter-spacing: -0.04rem;
+  font-size: 12px;
+  font-weight: 400;
+}
+.detail-table table td.item-value-title {
+  font-weight: 500;
+  color: #414141;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.detail-table table td.item-value-title:hover {
+  color: #866ac8;
+  text-decoration: underline;
 }
 .detail-table table td.item-value.item-posit {
   color: #617ff8;
@@ -439,16 +453,6 @@ select > option {
   color: #313131;
   font-weight: 500;
 }
-.detail-table table td.item-value-title {
-  cursor: pointer;
-  transition: 0.2s;
-}
-.detail-table table td.item-value-title:hover {
-  color: #866ac8;
-  text-decoration: underline;
-}
-
-/* .detail-table table  */
 
 .detail-table .pagination-list {
   margin-top: 24px;
@@ -506,6 +510,12 @@ select > option {
 }
 
 /** SEARCH page **/
+.content-article.article-search-keyword {
+  position: absolute;
+  top: -90px;
+  right: 0;
+}
+
 .article-info-mentioned {
   display: flex;
   flex-direction: column;

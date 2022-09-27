@@ -1,0 +1,326 @@
+/*** SAMPLE ***/
+.chart-dummy.engagement {
+  width: 190px;
+  height: 190px;
+  background-color: lightgreen;
+}
+#stmtTrdSwpContainer .trend-chart-list {
+  width: 100%;
+  height: 300px;
+  background-color: lightblue;
+}
+#enggTrdSwpContainer .trend-chart-list {
+  width: 100%;
+  height: 300px;
+  background-color: lightcoral;
+}
+#postTrdSwpContainer .trend-chart-list {
+  width: 100%;
+  height: 300px;
+  background-color: lightgreen;
+}
+
+/*** COMMON ***/
+.mo-section {
+  display: none;
+}
+
+.blind {
+  display: block;
+  position: absolute;
+  top: -99999px;
+  left: 0;
+}
+
+.clearFix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.center {
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+  min-width: 1000px;
+  margin: 0 auto;
+}
+
+.link-area {
+  display: block;
+  width: 100%;
+}
+
+/** TEXT STYLE **/
+.txt-blue {
+  color: #617ff8;
+}
+.txt-grey {
+  color: #a0a0a0;
+}
+.txt-red {
+  color: #fb6761;
+}
+
+.txt-sizeP {
+  font-weight: 700;
+  transform: skew(-0.01deg);
+}
+.txt-highlight {
+  display: inline-block;
+  position: relative;
+  font-weight: 800;
+  z-index: 1;
+}
+.txt-highlight::before {
+  content: '';
+  display: inline-block;
+  display: block;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 101%;
+  height: 65%;
+  background-color: #dbd4ec;
+  opacity: 0.8;
+  z-index: -1;
+}
+.txt-num {
+  font-family: 'Spoqa Han Sans Neo', 'Noto Sans KR', Apple Gothic, 'sans-serif';
+}
+.txt-posit {
+  color: #617ff8;
+}
+.txt-negat {
+  color: #fb6761;
+}
+
+/** CHART COLOR **/
+.cht-grey {
+  background-color: #a0a0a0;
+}
+.cht-gr {
+  background-color: #90d3dc;
+}
+.cht-bl {
+  background-color: #699ff1;
+}
+.cht-yl {
+  background-color: #f1f169;
+}
+.cht-or {
+  background-color: #f19f69;
+}
+
+/** BTN **/
+.btn__wrap {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0;
+}
+.btn {
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  word-break: keep-all;
+}
+.btn > button,
+.btn > a {
+  display: block;
+  padding: 0 16px;
+  border-radius: 6px;
+  border: 1px solid #866ac8;
+  background-color: #fff;
+  line-height: 36px;
+  color: #633fb8;
+  transition: 0.2s;
+}
+button {
+  word-break: keep-all;
+}
+button:hover {
+  cursor: pointer;
+}
+.btn:hover > button,
+.btn:hover > a {
+  background-color: #eeeaf7;
+  box-shadow: 1px 3px 6px rgba(88, 88, 88, 0.1);
+}
+.btn-1 > button,
+.btn-1 > a {
+  border: 1px solid #633fb8;
+  background-color: #633fb8;
+  color: #fff;
+}
+.btn-1:hover > button,
+.btn-1:hover > a {
+  border: 1px solid #7553c4;
+  background-color: #7553c4;
+}
+.btn-2 > button,
+.btn-2 > a {
+  border: 1px solid #e1e1e1;
+  background-color: #e1e1e1;
+  color: #313131;
+}
+.btn-2:hover > button,
+.btn-2:hover > a {
+  border: 1px solid #e5e5e5;
+  background-color: #e5e5e5;
+}
+
+.cls-btn {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  width: 34px;
+  height: 34px;
+  border: none;
+  border-radius: 10px;
+  background: none;
+  background-color: #fff;
+  text-indent: -99999px;
+}
+.cls-btn:hover {
+  box-shadow: 1px 3px 12px rgba(128, 128, 128, 0.2);
+}
+.cls-btn::before,
+.cls-btn::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 28px;
+  background-color: #555;
+}
+.cls-btn::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.cls-btn::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/** INPUT **/
+input[type='text']::-webkit-input-placeholder {
+  color: #ccc;
+}
+input[type='text']::-ms-input-placeholder {
+  color: #ccc;
+}
+input[type='text']::placeholder {
+  color: #ccc;
+  font-weight: 300;
+}
+input[type='text'],
+input[type='date'] {
+  background-color: #f7f8f8;
+}
+input[type='date'] {
+  color: #888;
+}
+input[type='date']::-webkit-calendar-picker-indicator {
+  border-radius: 2px;
+  background-image: url('../img/icon/Icon-calendar.svg');
+  color: #666;
+}
+
+input[type='checkbox'] {
+  display: none;
+}
+input[type='checkbox'] + label {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-left: 20px;
+  opacity: 0.8;
+  white-space: normal;
+  word-break: break-all;
+  cursor: pointer;
+}
+input[type='checkbox']:checked + label {
+  color: #313131;
+  opacity: 1;
+}
+input[type='checkbox'] + label::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 8px;
+  left: 0px;
+  transform: translateY(-50%);
+  width: 14px;
+  height: 100%;
+  background-image: url('../img/icon/icon-checkbox-default.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  vertical-align: -3px;
+}
+.text-btn input[type='checkbox'] + label::before {
+  top: 50%;
+  transform: translate(-50% -50%);
+}
+input[type='checkbox']:checked + label::before {
+  background-image: url('../img/icon/icon-checkbox-checked.svg');
+}
+
+/* 검색어 박스 */
+.search-word-box {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: top;
+}
+.search-word-box .input-search-word input[type='text'] {
+  width: auto;
+  height: 34px;
+  border-radius: 6px 0 0 6px;
+  border: 1px solid #dadada;
+  text-indent: 8px;
+}
+.search-word-box .search-word__btn {
+  padding: 0 18px;
+  border-radius: 0 6px 6px 0;
+  border: 1px solid #633fb8;
+  line-height: 32px;
+}
+.search-word-box .search-word__btn.btn-1 {
+  background-color: #633fb8;
+  color: #fff;
+}
+.search-word-box .search-word__btn.btn-1:hover {
+  border: 1px solid #7553c4;
+  background-color: #7553c4;
+}
+.search-word-box .search-word__btn.btn-2 {
+  border: 1px solid #e1e1e1;
+  background-color: #e1e1e1;
+  color: #313131;
+}
+.search-word-box .search-word__btn.btn-2:hover {
+  border: 1px solid #e5e5e5;
+  background-color: #e5e5e5;
+}
+
+/* SCROLL BOX */
+.scroll-box {
+  overflow-y: auto;
+}
+.scroll-box::-webkit-scrollbar {
+  width: 10px;
+}
+.scroll-box::-webkit-scrollbar-thumb {
+  background-color: #dfdfdf;
+}
+.scroll-box::-webkit-scrollbar-track {
+  background-color: #efefef;
+}
+
+/* TABLE WRAP */
+.table-wrap {
+  /* overflow-x: auto; */
+}

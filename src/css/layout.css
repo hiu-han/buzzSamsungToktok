@@ -1,151 +1,4 @@
 /** COMMON **/
-.btn__wrap {
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 0;
-}
-.btn {
-  display: inline-block;
-  font-size: 14px;
-  cursor: pointer;
-  text-align: center;
-}
-.btn > button,
-.btn > a {
-  display: block;
-  padding: 0 16px;
-  border-radius: 6px;
-  border: 1px solid #866ac8;
-  background-color: #fff;
-  line-height: 36px;
-  color: #633fb8;
-  transition: 0.2s;
-}
-.btn:hover > button,
-.btn:hover > a {
-  background-color: #eeeaf7;
-  box-shadow: 1px 3px 6px rgba(88, 88, 88, 0.1);
-}
-.btn-1 > button,
-.btn-1 > a {
-  border: 1px solid #633fb8;
-  background-color: #633fb8;
-  color: #fff;
-}
-.btn-1:hover > button,
-.btn-1:hover > a {
-  border: 1px solid #7553c4;
-  background-color: #7553c4;
-}
-.btn-2 > button,
-.btn-2 > a {
-  border: 1px solid #e1e1e1;
-  background-color: #e1e1e1;
-  color: #313131;
-}
-.btn-2:hover > button,
-.btn-2:hover > a {
-  border: 1px solid #e5e5e5;
-  background-color: #e5e5e5;
-}
-
-.cls-btn {
-  position: absolute;
-  top: 0;
-  right: 10px;
-  width: 34px;
-  height: 34px;
-  border: none;
-  border-radius: 10px;
-  background: none;
-  background-color: #fff;
-  text-indent: -99999px;
-}
-.cls-btn:hover {
-  box-shadow: 1px 3px 12px rgba(128, 128, 128, 0.2);
-}
-.cls-btn::before,
-.cls-btn::after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 2px;
-  height: 28px;
-  background-color: #555;
-}
-.cls-btn::before {
-  transform: translate(-50%, -50%) rotate(45deg);
-}
-.cls-btn::after {
-  transform: translate(-50%, -50%) rotate(-45deg);
-}
-
-input[type='text']::-webkit-input-placeholder {
-  color: #ccc;
-}
-input[type='text']::-ms-input-placeholder {
-  color: #ccc;
-}
-input[type='text']::placeholder {
-  color: #ccc;
-  font-weight: 300;
-}
-input[type='text'],
-input[type='date'] {
-  background-color: #f7f8f8;
-}
-input[type='date'] {
-  color: #888;
-}
-input[type='date']::-webkit-calendar-picker-indicator {
-  border-radius: 2px;
-  background-image: url('../img/icon/Icon-calendar.svg');
-  color: #666;
-}
-
-input[type='checkbox'] {
-  display: none;
-}
-input[type='checkbox'] + label {
-  display: inline-block;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  padding-left: 20px;
-  opacity: 0.8;
-  white-space: normal;
-  word-break: break-all;
-  cursor: pointer;
-}
-input[type='checkbox']:checked + label {
-  color: #313131;
-  opacity: 1;
-}
-input[type='checkbox'] + label::before {
-  content: '';
-  display: inline-block;
-  position: absolute;
-  top: 8px;
-  left: 0px;
-  transform: translateY(-50%);
-  width: 14px;
-  height: 100%;
-  background-image: url('../img/icon/icon-checkbox-default.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  vertical-align: -3px;
-}
-.text-btn input[type='checkbox'] + label::before {
-  top: 50%;
-  transform: translate(-50% -50%);
-}
-input[type='checkbox']:checked + label::before {
-  background-image: url('../img/icon/icon-checkbox-checked.svg');
-}
-
 /** HEADER **/
 #header,
 #headerNav {
@@ -273,13 +126,13 @@ nav .nav-item:hover::after {
   box-shadow: 1px 3px 12px rgba(128, 128, 128, 0.2);
 }
 .search-keyword-wrap #detailOpen.now-on {
-  color: #3dbbc4;
+  color: #633fb8;
 }
 .search-keyword-wrap #detailOpen:hover::before {
-  background: no-repeat center 100%/100% url('../img/icon/icon-plus-3dbbc4.svg');
+  background: no-repeat center 100%/100% url('../img/icon/icon-plus-866ac8.svg');
 }
 .search-keyword-wrap #detailOpen.now-on::before {
-  background: no-repeat center 50%/100% url('../img/icon/icon-minus-3dbbc4.svg');
+  background: no-repeat center 50%/100% url('../img/icon/icon-minus-866ac8.svg');
 }
 .search-input {
   position: relative;
@@ -611,7 +464,7 @@ input[type='date']:hover {
 .detail-btn-area .preset-btn > .add-icon::before {
   width: 16px;
   height: 16px;
-  background-image: url('../img/icon/icon-preset-3dbbc4.svg');
+  background-image: url('../img/icon/icon-preset-866ac8.svg');
   vertical-align: -4px;
 }
 .detail-btn-area .preset-save-btn > input {
