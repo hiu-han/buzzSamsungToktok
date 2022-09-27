@@ -951,7 +951,7 @@ body {
   transition: 0.3s;
 }
 .article-list-wrap .detail-item.item-subs.now-on {
-  border: 1px solid #633fb8;
+  border: 1px solid #aa8feb;
 }
 .article-list-wrap .detail-item.item-subs.now-on > .item-subs-opener {
   background-image: url('../img/icon/icon_flipped_arrow.svg');
@@ -1118,7 +1118,7 @@ body {
   cursor: pointer;
 }
 .article-rank-wrap .rank-list > .rank-item.item-subs:hover {
-  border: 1px solid #866ac8;
+  border: 1px solid #aa8feb;
 }
 .article-rank-wrap .rank-list > .item-title {
   font-size: 0;
@@ -1838,10 +1838,10 @@ body {
   box-shadow: 1px 3px 12px rgb(88 88 88 / 20%);
 }
 .usr-set-item:hover {
-  border: 1px solid #866ac8;
+  border: 1px solid #aa8feb;
 }
 .usr-set-item.now-on {
-  border: 1px solid #866ac8;
+  border: 1px solid #aa8feb;
 }
 
 .usr-set-item .set-btn-wrap {

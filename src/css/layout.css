@@ -1762,7 +1762,7 @@ h3.logo {
     background-color: #f7f8f8;
   }
   #header.now-on {
-    border-bottom: 1px solid #3dbbc4;
+    border-bottom: 1px solid #aa8feb;
   }
   header {
     background-color: #f7f8f8;
@@ -1779,10 +1779,10 @@ h3.logo {
   }
   .header-inner .logo {
     position: absolute;
-    top: 50%;
+    top: 46%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 128px;
+    width: 140px;
     padding-top: 3px;
     margin-right: 0;
   }
@@ -2048,15 +2048,27 @@ h3.logo {
     width: calc(60% - 4px);
   }
 
-  /** FOOTER 480px **/
+  /** FOOTER 768px **/
   .footer-inner {
     max-width: unset;
     min-width: unset;
-    padding: 36px 24px 36px;
-    font-size: 13px;
+    padding: 36px 26px 36px;
+  }
+  address > .addr-info > p {
+    /* display: block; */
+    line-height: 1.8;
+  }
+  address > .addr-info > p.co-info {
+    /* display: block; */
+  }
+  address > .addr-info > p.co-addr {
+    padding-right: 240px;
+  }
+  address > .addr-info > p.co-addr::after {
+    display: none;
   }
 
-  /** MODAL **/
+  /** MODAL 768px **/
   /** MODAL >> 컨텐츠 원문 리스트 모달 **/
   #showAllModal > .show-all-wrap {
     width: 80%;
@@ -2204,6 +2216,12 @@ h3.logo {
 }
 
 @media all and (max-width: 480px) {
+  /* HEADER 480px */
+  .header-inner .logo {
+    top: 50%;
+    width: 128px;
+  }
+
   #showAllModal > .show-all-wrap {
     width: calc(100% - 14px);
   }
@@ -2225,5 +2243,29 @@ h3.logo {
   #showOriginModal > .show-origin-wrap {
     width: calc(100% - 14px);
     padding: 20px 14px 24px;
+  }
+
+  /* FOOTER 480px */
+  address > .addr-info > p {
+    display: block;
+  }
+  address > .addr-info > p.co-addr {
+    padding-right: 0;
+  }
+  address > .addr-info > p.co-phone,
+  address > .addr-info > p.co-fax {
+    display: inline-block;
+  }
+  address > .addr-info > p.co-fax {
+    padding-right: 0;
+    margin-right: 0;
+  }
+  address > .addr-info > p::after {
+    display: none;
+  }
+
+  /* ASIDE 480px */
+  #goTop {
+    bottom: 50px;
   }
 }
