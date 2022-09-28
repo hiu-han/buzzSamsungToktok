@@ -550,3 +550,64 @@ select > option {
   font-weight: 500;
   color: #afa0d3;
 }
+
+.colorTest {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 44px 0;
+}
+.colorTest > li {
+  width: 200px;
+  height: 70px;
+  padding: 6px 10px;
+  margin: 6px;
+  background-color: #eee;
+  font-size: 16px;
+}
+.colorTest > li.color-1 {
+  background-color: #699ff1;
+}
+.colorTest > li.color-2 {
+  background-color: #fb6761;
+}
+.colorTest > li.color-3 {
+  /* background-color: #f8f858; */
+  background-color: #f0f040;
+}
+.colorTest > li.color-4 {
+  /* background-color: #ffbf48; */
+  background-color: #ffcb51;
+}
+.colorTest > li.color-5 {
+  background-color: #81e778;
+}
+.colorTest > li.color-6 {
+  background-color: #a384eb;
+}
+.colorTest > li.color-7 {
+  background-color: #69ecec;
+}
+.colorTest > li.color-8 {
+  background-color: #ffaab8;
+}
+.colorTest > li.color-9 {
+  background-color: #83af5a;
+}
+.colorTest > li.color-10 {
+  background-color: #586bd1;
+}
+.colorTest > li.color-11 {
+  background-color: #eee;
+}
+
+@media all and (max-width: 480px) {
+  .colorTest {
+    justify-content: space-between;
+    gap: 14px;
+  }
+  .colorTest > li {
+    width: 150px;
+    margin: 0;
+  }
+}

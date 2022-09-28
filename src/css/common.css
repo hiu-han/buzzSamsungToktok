@@ -112,6 +112,9 @@
 .cht-or {
   background-color: #f19f69;
 }
+.cht-red {
+  background-color: #fb6761;
+}
 
 /** BTN **/
 .btn__wrap {
@@ -314,7 +317,7 @@ input[type='checkbox']:checked + label::before {
   width: 10px;
 }
 .scroll-box::-webkit-scrollbar-thumb {
-  background-color: #dfdfdf;
+  background-color: #d1d1d1;
 }
 .scroll-box::-webkit-scrollbar-track {
   background-color: #efefef;
