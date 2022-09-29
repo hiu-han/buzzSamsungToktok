@@ -598,7 +598,7 @@ select > option {
   background-color: #586bd1;
 }
 .colorTest > li.color-11 {
-  background-color: #eee;
+  background-color: #dadada;
 }
 
 @media all and (max-width: 480px) {
