@@ -32,11 +32,14 @@
 #mentKwrdText
 **/
 
+/***------------------ common.css  START ------------------***/
+/***------------------ common.css  END ------------------***/
+
+/***------------------ style.css  START ------------------***/
 /*** COMMON ***/
 /** COMMON -> BODY **/
 /** COMMON -> SECTION ARTICLE **/
 /** COMMON -> PAGE TAP **/
-/** COMMON -> CUSTOM SELECT **/
 /** COMMON -> TABLE **/
 /* COMMON -> SECTION ARTICLE -> article-content-top */
 /* COMMON -> SECTION ARTICLE -> TREND page 내 차트 아이템 구분 색상 */
@@ -56,12 +59,14 @@
 /* CONTENT -> STATUS PAGE -> ChannelDetails article */
 
 /** CONTENT -> TREND-PAGE **/
+/* CONTENT -> TREND-PAGE -> Association article */
 
 /** CONTENT -> CONTENTS-PAGE **/
 /* CONTENT -> CONTENTS-PAGE -> Hottest articles (simple) */
 /* CONTENT -> CONTENTS-PAGE -> Hottest articles (wide) */
 
 /*** USER PRESET ***/
+/***------------------ style.css  END ------------------***/
 
 /* ---------------------------------------------------------- */
 /* ---------------------------------------------------------- */

@@ -273,102 +273,147 @@ body {
   letter-spacing: -0.01rem;
 }
 
-/** COMMON -> CUSTOM SELECT **/
-.cont-select {
-  position: relative;
-  width: 120px;
-  height: 28px;
-  padding-left: 28px;
-  border-radius: 4px;
-  border: none;
-  font-size: 13px;
-  z-index: 2;
-  cursor: pointer;
+/** COMMON -> TABLE **/
+.table-search {
+  margin-bottom: 12px;
+  text-align: right;
 }
-.cont-select::before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 44%;
-  left: 14px;
-  width: 6px;
-  height: 6px;
-  border-bottom: 1px solid #666;
-  border-right: 1px solid #666;
-  transform: translateY(-50%) rotate(45deg);
-  z-index: 1;
-  transition: 0.2s ease-in;
+.table-search .search-select-box,
+.table-search .sarch-word-box {
+  display: inline-block;
+  text-align: left;
 }
-.cont-select::after {
-  content: '';
-  display: block;
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 35px;
-  width: 2px;
-  height: 100%;
-  background-color: lightcyan;
+.detail-table .table-search .search-word-box {
+  margin-right: 8px;
 }
-.cont-select .modal-select-label,
-.cont-select .select-label {
-  display: flex;
-  align-items: center;
-  height: inherit;
-  border: 0 none;
-  outline: 0 none;
-  background: transparent;
-  cursor: pointer;
+.table-search .btn > button,
+.table-search .btn > a {
+  line-height: 32px;
 }
-.cont-select .option-list {
-  position: absolute;
-  top: 36px;
-  left: 0;
+.detail-table table {
+  table-layout: fixed;
   width: 100%;
-  max-height: 0;
-  padding: 0;
-  border-radius: 6px;
-  background-color: #fff;
+  min-width: 800px;
+}
+.detail-table table tr {
+  border-bottom: 1px solid #fff;
+  background-color: #f4f6f7;
+}
+.detail-table table th {
+  font-weight: 600;
+}
+.detail-table table tr th,
+.detail-table table tr td {
+  height: 44px;
+  padding-right: 4px;
+  vertical-align: middle;
   overflow: hidden;
-  transition: 0.3s ease-in;
-  box-shadow: 1px 3px 8px rgba(120, 120, 120, 0.2);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-wrap: normal;
 }
-.cont-select .option-list::-webkit-scrollbar {
-  width: 6px;
+.detail-table table thead tr th {
+  border-bottom: 3px solid #fff;
+  background-color: #f1f2f2;
 }
-.cont-select .option-list::-webkit-scrollbar-track {
-  background: transparent;
+.detail-table table tbody tr:nth-child(odd) {
+  background-color: #fafcfd;
 }
-.cont-select .option-list::-webkit-scrollbar-thumb {
-  background: #303030;
-  border-radius: 45px;
+.detail-table table tr td {
+  color: #515151;
 }
-.cont-select .option-list::-webkit-scrollbar-thumb:hover {
-  background: #303030;
+.detail-table table th.item-value.item-center,
+.detail-table table td.item-value.item-center {
+  text-align: center;
 }
-.cont-select.active {
-  box-shadow: 1px 3px 10px rgba(120, 120, 120, 0.2);
-  z-index: 10;
+.detail-table table td.item-value.item-left {
+  text-align: left;
+  text-indent: 14px;
 }
-.cont-select.active::before {
-  top: 58%;
-  transform: translateY(-50%) rotate(-135deg);
+.detail-table table th.item-value-num {
+  letter-spacing: -0.04rem;
+  font-size: 12px;
+  font-weight: 400;
 }
-.cont-select.active .option-list {
-  max-height: 550px;
+.detail-table table td.item-value-title {
+  font-weight: 500;
+  color: #414141;
+  cursor: pointer;
+  transition: 0.2s;
 }
-.cont-select .option-item {
-  padding: 6px 15px 6px 34px;
-  transition: -0.2s;
+.detail-table table td.item-value-title:hover {
+  color: #866ac8;
+  text-decoration: underline;
 }
-.cont-select .option-item:hover {
-  background: #f1f1f1;
+.detail-table table td.item-value.item-posit {
+  color: #617ff8;
 }
-.cont-select .option-item:last-child {
-  border-bottom: 0 none;
+.detail-table table td.item-value.item-negat {
+  color: #fb6761;
+}
+.detail-table table td.item-value-message {
+  color: #636566;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.detail-table table td.item-value-message:hover {
+  color: #313131;
+  font-weight: 500;
 }
 
-/** COMMON -> TABLE **/
+.detail-table .pagination-list {
+  margin-top: 24px;
+  text-align: center;
+}
+.detail-table .pagination-list > li {
+  display: inline-block;
+  text-align: center;
+  margin-left: 8px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+.detail-table .pagination-list > li > button {
+  background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+}
+.detail-table .pagination-list > li.page-arrow > button {
+  width: 22px;
+  height: 22px;
+  text-indent: -99999px;
+  background-image: url('../img/icon/icon-arrow_next-866ac8.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  overflow: hidden;
+  border: none;
+}
+.detail-table .pagination-list > li.page-arrow.page-prev > button {
+  transform: rotate(180deg);
+}
+.input-info-table .pagination-list > li.page-arrow.disable > button {
+  cursor: auto;
+  opacity: 0.1;
+}
+.detail-table .pagination-list .page-count {
+  position: relative;
+  font-size: 14px;
+  color: #aaa;
+}
+.detail-table .pagination-list .page-count.now-on {
+  font-weight: 600;
+  color: #555;
+}
+.detail-table .pagination-list .page-count.now-on::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 1px;
+  background-color: #555;
+}
 
 /* COMMON -> SECTION ARTICLE -> article-content-top */
 .article-content > .article-content-top {
@@ -1268,6 +1313,58 @@ body {
 }
 
 /** CONTENT -> TREND-PAGE **/
+/* CONTENT -> TREND-PAGE -> Association article */
+#buttonBar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  width: 100%;
+  text-align: center;
+}
+#buttonBar > div {
+  display: inline-block;
+}
+/* #buttonBar > div:last-child {
+    margin-right: 0;
+  } */
+#buttonBar > div > p {
+  margin-right: 4px;
+}
+#buttonBar > div > p:last-child {
+  margin-right: 0;
+}
+.icon-btn.btn--reset-zoom > button,
+.icon-btn.btn--reset-zoom > a {
+  background-image: url('../img/icon/icon-reset-01.svg');
+}
+.icon-btn.btn--reset-pos > button,
+.icon-btn.btn--reset-pos > a {
+  background-image: url('../img/icon/icon-reset-02.svg');
+}
+#buttonBar .btn > button,
+#buttonBar .btn > a {
+  line-height: 32px;
+}
+.btn--size__wrap .btn > button {
+  padding: 0 8px;
+  font-size: 13px;
+}
+.btn--size__wrap .btn--size-plus > button {
+  border-radius: 20px 0 0 20px;
+}
+.btn--size__wrap .btn--size-minus > button {
+  border-radius: 0 20px 20px 0;
+}
+
+#optionChkBar {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  width: 100%;
+  margin: 14px 0 14px;
+  text-align: center;
+}
 
 /** CONTENT -> CONTENTS-PAGE **/
 /* CONTENT -> CONTENTS-PAGE -> Hottest articles (simple) */
