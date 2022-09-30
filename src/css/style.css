@@ -59,6 +59,7 @@
 
 /** CONTENT -> CONTENTS-PAGE **/
 /* CONTENT -> CONTENTS-PAGE -> Hottest articles (simple) */
+/* CONTENT -> CONTENTS-PAGE -> Hottest articles (wide) */
 
 /*** USER PRESET ***/
 
@@ -209,94 +210,18 @@
   /* NOW page >> CHANNEL DETAILS 768px */
 
   /* NOW page >> SENTIMENT 768px */
-  #main .content-article.width-3-1.article-sentiment {
-    width: calc(50% - 12px);
-  }
 
   /* NOW page >> SENTIMENT BY CHANNEL 768px */
-  #main .content-article.width-3-2.article-sentiment-channels {
-    width: calc(50% - 12px);
-  }
 
   /* NOW page >> KEYWORD ASSOCIATION 768px */
-  #main .content-section.now-ranking-section .section-inner {
-    flex-wrap: wrap;
-  }
-  #main .content-article.width-4-2.article-keyword-association {
-    width: 100%;
-    margin-bottom: 24px;
-  }
-  #main .content-article.width-4-1.article-sentiment-keyword,
-  #main .content-article.width-4-1.article-keyword-ranking {
-    width: calc(50% - 12px);
-  }
-  .article-keyword-association {
-    order: 1;
-  }
-  .article-sentiment-keyword {
-    order: 2;
-  }
-  .article-keyword-ranking {
-    order: 3;
-  }
 
   /* NOW page >> SENTIMENT KEYWORD 768px */
 
   /* NOW page >> KEYWORD KEYWORD RANKING 768px */
 
   /** CONTENT PAGE >> TREND PAGE 768px **/
-  .article-content > .article-content-top {
-    height: auto;
-    margin-top: 0;
-  }
-  .article-content-top > .period-select,
-  .article-content-top > .method-select {
-    float: none;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 12px;
-    width: 100%;
-  }
-  .article-content-top > .color-info {
-    position: static;
-    top: unset;
-    left: unset;
-    transform: none;
-  }
-  .article-content-top .color-list {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    width: 100%;
-  }
-  .article-content-top .color-item {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-  }
-  .article-content-top .color-item > .item-color {
-    width: 14px;
-  }
-  .article-content-top .color-item > .item-name {
-    margin-left: 4px;
-    line-height: 1;
-    font-size: 11px;
-  }
 
   /** CONTENT PAGE >> HOTTEST PAGE 768px **/
-  .hottest-item.item-title > .contents-area * {
-    font-size: 13px;
-  }
-  .hottest-item > .contents-area > .item-name {
-    width: 44%;
-  }
-  .hottest-item > .contents-area > .item-post-num,
-  .hottest-item > .contents-area > .item-engagement {
-    width: 28%;
-  }
-  .hottest-item.item-title > .contents-area > .item-engagement {
-    letter-spacing: -0.05rem;
-  }
 }
 
 /*** SSTT 768px ***/
