@@ -1335,6 +1335,7 @@ h3.logo {
 /** 검색 설정 모달 **/
 #srchSetModal {
   display: none;
+  /* display: block; */
 }
 #srchSetModal.modalOn {
   display: block;
@@ -1453,18 +1454,18 @@ h3.logo {
   height: auto;
   padding: 8px 10px;
   border-radius: 8px;
-  border: 1px solid #e7f7f0;
-  background-color: #e7f7f0;
+  border: 1px solid #c3b1ec;
+  background-color: #fff;
   cursor: pointer;
   transition: 0.2s ease-in;
 }
 .preset-wrap .set-btn-wrap > .set-btn:hover {
-  background-color: #048ea0;
-  border: 1px solid #048ea0;
+  background-color: #866ac8;
+  border: 1px solid #866ac8;
 }
 .preset-wrap .set-btn-wrap > .set-btn.search-btn > span {
   margin-top: 0;
-  background-image: url('../img/icon/icon-search-24cd88.svg');
+  background-image: url('../img/icon/icon-search-866ac8.svg');
 }
 .preset-wrap .set-btn-wrap > .set-btn.search-btn:hover > span {
   background-image: url('../img/icon/icon-search-fff.svg');

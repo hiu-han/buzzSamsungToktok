@@ -780,3 +780,31 @@ select > option {
 .table-wrap {
   /* overflow-x: auto; */
 }
+
+@media all and (max-width: 480px) {
+  /*** COLOR TEST - 480px ***/
+  .colorTest {
+    justify-content: space-between;
+    gap: 14px;
+  }
+  .colorTest > li {
+    width: 150px;
+    margin: 0;
+  }
+
+  /*** COMMON - 480px ***/
+  .pc-section {
+    display: none;
+  }
+  .mo-section {
+    display: block;
+  }
+
+  /* INPUT -> RADIO 옵션 on off 버튼 랩 */
+  .chart-option__wrap > .chart-option--radio {
+    position: relative;
+    top: unset;
+    right: unset;
+    transform: unset;
+  }
+}

@@ -6,7 +6,6 @@
 @import url('./modal.css');
 @import url('./lib.css');
 @import url('./main.css');
-@import url('./sstt.css');
 
 /** className 표기
 .mentioned-keyword {
@@ -33,6 +32,23 @@
 **/
 
 /***------------------ common.css  START ------------------***/
+/*** SAMPLE ***/
+/*** COLOR TEST ***/
+/*** COMMON ***/
+/** TEXT STYLE **/
+/** CHART COLOR **/
+/** BTN **/
+/** BTN -> icon-btn **/
+/** INPUT **/
+/* INPUT -> BTN & INPUT 박스 */
+/* INPUT -> 검색어 박스 */
+/* 위에 정리한 'BTN & INPUT 박스'와 하나로 통일해야할지 선택 필요함! */
+/* INPUT -> CHECKBOX 옵션 on off 버튼 랩 */
+/* INPUT -> SELECT */
+/* INPUT -> SELECT (CUSTOM) */
+/* INPUT -> RADIO 옵션 on off 버튼 랩 */
+/* SCROLL BOX */
+/* TABLE WRAP */
 /***------------------ common.css  END ------------------***/
 
 /***------------------ style.css  START ------------------***/
@@ -62,722 +78,70 @@
 /* CONTENT -> TREND-PAGE -> Association article */
 
 /** CONTENT -> CONTENTS-PAGE **/
+/* CONTENT -> CONTENTS-PAGE -> 언급량 article */
 /* CONTENT -> CONTENTS-PAGE -> Hottest articles (simple) */
 /* CONTENT -> CONTENTS-PAGE -> Hottest articles (wide) */
 
 /*** USER PRESET ***/
+
+/*** COMMON - 1200px ***/
+/** COMMON -> TABLE - 1200px **/
+
+/*** COMMON - 768px ***/
+/** COMMON -> BODY - 768px **/
+/** COMMON -> PAGE TAP - 768px **/
+/** COMMON -> TABLE - 768px **/
+/* COMMON -> SECTION ARTICLE -> article-content-top - 768px */
+
+/*** MAIN - 768px ***/
+/** MAIN -> INTRO PAGE - 768px **/
+
+/*** CONTENT - 768px ***/
+/** CONTENT -> STATUS PAGE - 768px **/
+/* CONTENT -> STATUS PAGE -> ChannelDetails article - 768px */
+/* CONTENT -> STATUS PAGE -> Sentiment article - 768px */
+/* CONTENT -> STATUS PAGE -> SentimentByChannel article - 768px */
+/* CONTENT -> STATUS PAGE -> KeywordAssociation & Ranking articles - 768px */
+
+/* CONTENT -> TREND PAGE - 768px */
+
+/** CONTENT -> CONTENTS-PAGE -768px **/
+/* CONTENT -> CONTENTS-PAGE -> Hottest articles (simple) -768px */
+
+/*** MAIN - 680px ***/
+/** MAIN -> INTRO PAGE - 680px **/
+/* MAIN -> INTRO PAGE > Contents section - 680px */
+
+/*** CONTENT - 680px ***/
+/** CONTENT -> STATUS PAGE - 680px **/
+/* CONTENT -> STATUS PAGE -> Engagement article - 680px */
+
+/*** COMMON ***/
+/** COMMON -> BODY - 480px **/
+/** COMMON -> SECTION ARTICLE - 480px **/
+/** COMMON -> PAGE TAP - 480px **/
+/** COMMON -> TABLE - 480px **/
+
+/*** MAIN - 480px ***/
+/** MAIN -> INTRO PAGE - 480px **/
+/* MAIN -> INTRO PAGE -> Login section - 480px */
+/* MAIN -> INTRO PAGE > Contents section - 480px */
+
+/*** CONTENT - 480px ***/
+/** CONTENT -> STATUS PAGE - 480px **/
+/* CONTENT -> STATUS PAGE -> Engagement article - 480px */
+/* CONTENT -> STATUS PAGE -> ChannelDetails article */
+/* CONTENT -> STATUS PAGE -> Sentiment article - 480px */
+/* CONTENT -> STATUS PAGE -> SentimentByChannel article - 480px */
+/* CONTENT -> STATUS PAGE -> Keyword articles - 480px */
+
+/** CONTENT -> TREND PAGE - 480px **/
+/* CONTENT -> TREND-PAGE -> Association article - 480px */
+/* CONTENT -> TREND-PAGE -> KeywordTrend article - 480px */
+
+/** CONTENT -> CONTENTS PAGE - 480px **/
+/* CONTENT -> CONTENTS-PAGE -> Hottest articles (simple) - 480px */
+/* CONTENT -> CONTENTS-PAGE -> HottestS articles (wide) - 480px */
+
+/*** USER PRESET - 480px ***/
 /***------------------ style.css  END ------------------***/
-
-/* ---------------------------------------------------------- */
-/* ---------------------------------------------------------- */
-/* ---------------------------------------------------------- */
-/* ---------------------------------------------------------- */
-
-/* CONTENT PAGE >> HOTTEST PAGE >> hottest top10 */
-/* .article-content-top .channel-select {
-  display: none;
-  position: absolute;
-  right: 0;
-  top: -30px;
-}
-.channel-select .chkbox {
-  display: inline-block;
-  position: relative;
-  height: 24px;
-  padding: 2px 8px 2px 26px;
-  cursor: pointer;
-}
-.channel-select .chkbox > input {
-  display: none;
-}
-.channel-select .chkbox > .chk-wrap {
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  border: 1px solid #ddd;
-  border-radius: 15px;
-  transition: 0.3s;
-}
-.channel-select .chkbox > .chk-wrap::before {
-  display: block;
-  content: '';
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 4px;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  border: 1px solid #ddd;
-  background-color: #efefef;
-  transition: 0.3s;
-}
-.channel-select .chkbox > .chk-wrap::after {
-  display: block;
-  display: none;
-  content: '';
-  position: absolute;
-  top: 45%;
-  left: 8px;
-  transform: translateY(-50%) rotate(45deg);
-  width: 5px;
-  height: 8px;
-  border-bottom: 2px solid #fff;
-  border-right: 2px solid #fff;
-}
-.channel-select .chkbox > .chk-txt {
-  position: relative;
-  font-size: 11px;
-  font-weight: 500;
-  color: #aaa;
-  z-index: 1;
-}
-.channel-select .chkbox > input:checked + .chk-wrap {
-  background-color: #617ff8;
-}
-.channel-select .chkbox > input:checked + .chk-wrap::before {
-  background-color: #fff;
-  border: 1px solid #fff;
-}
-.channel-select .chkbox.chkbox-sns > input:checked + .chk-wrap {
-  background-color: #fd7c78;
-  border: 1px solid #fd7c78;
-}
-.channel-select .chkbox.chkbox-sns > input:checked + .chk-wrap::before {
-  background-color: #e9504b;
-}
-.channel-select .chkbox.chkbox-cafe > input:checked + .chk-wrap {
-  background-color: #83e2ba;
-  border: 1px solid #83e2ba;
-}
-.channel-select .chkbox.chkbox-cafe > input:checked + .chk-wrap::before {
-  background-color: #4ab689;
-}
-.channel-select .chkbox.chkbox-blog > input:checked + .chk-wrap {
-  background-color: #699ff1;
-  border: 1px solid #699ff1;
-}
-.channel-select .chkbox.chkbox-blog > input:checked + .chk-wrap::before {
-  background-color: #4381df;
-}
-.channel-select .chkbox.chkbox-commu > input:checked + .chk-wrap {
-  background-color: #f1f169;
-  border: 1px solid #f1f169;
-}
-.channel-select .chkbox.chkbox-commu > input:checked + .chk-wrap::before {
-  background-color: #f1dd69;
-}
-.channel-select .chkbox.chkbox-news > input:checked + .chk-wrap {
-  background-color: #f19f69;
-  border: 1px solid #f19f69;
-}
-.channel-select .chkbox.chkbox-news > input:checked + .chk-wrap::before {
-  background-color: #e7803b;
-}
-.channel-select .chkbox > input:checked + .chk-wrap + .chk-txt {
-  color: #444;
-  color: #fff;
-} */
-
-/** USER PAGE **/
-/* .user-page-profile {
-  display: inline-block;
-  width: 55px;
-  height: 55px;
-  border-radius: 50%;
-  background-image: url('../img/main/profile.PNG');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-.content-article .article-title > h3.user-page-name {
-  display: inline-block;
-  line-height: 55px;
-  font-size: 30px;
-  font-weight: bolder;
-  vertical-align: top;
-} */
-
-/** USER PAGE >> USER PRESET page **/
-
-@media all and (max-width: 1024px) {
-}
-
-@media all and (max-width: 768px) {
-  /** MAIN **/
-
-  /** CONTENT PAGE >> NOW page 768px **/
-  /* NOW page 768px */
-
-  /* NOW page >> CHANNEL DETAILS 768px */
-
-  /* NOW page >> SENTIMENT 768px */
-
-  /* NOW page >> SENTIMENT BY CHANNEL 768px */
-
-  /* NOW page >> KEYWORD ASSOCIATION 768px */
-
-  /* NOW page >> SENTIMENT KEYWORD 768px */
-
-  /* NOW page >> KEYWORD KEYWORD RANKING 768px */
-
-  /** CONTENT PAGE >> TREND PAGE 768px **/
-
-  /** CONTENT PAGE >> HOTTEST PAGE 768px **/
-}
-
-/*** SSTT 768px ***/
-@media all and (max-width: 768px) {
-  /** CONTENTS page **/
-  /* detail table */
-  .table-search {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: right;
-    align-items: center;
-    gap: 8px;
-  }
-
-  .detail-table table tr th,
-  .detail-table table tr td {
-    font-size: 12px;
-  }
-}
-
-@media all and (max-width: 680px) {
-  .article-keyword-news .swiper-pagination#idxTrdSwpPagination {
-    display: block;
-  }
-  .article-keyword-news .slide-btn-wrap {
-    display: block;
-  }
-
-  /* NOW page >> ENGAGEMENT 680px */
-  .article-engagement .chart-info-area {
-    position: relative;
-  }
-  .chart-info-area .info-item.info-engagement {
-    display: block;
-    position: relative;
-    width: 100%;
-    padding-bottom: 16px;
-    margin-bottom: 18px;
-    border-right: 0px;
-  }
-  .chart-info-area .info-item.info-engagement::after {
-    content: '';
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 20%;
-    height: 1px;
-    background-color: #ddd;
-  }
-  .chart-info-area .info-item:nth-child(n + 2):nth-child(-n + 3) {
-    width: 27%;
-  }
-  .chart-info-area .info-item:nth-child(n + 4):nth-child(-n + 5) {
-    width: 23%;
-  }
-  .chart-info-area .info-item:nth-child(n + 2):nth-child(-n + 5) > .item-title {
-    font-size: 14px;
-  }
-  .chart-info-area .info-item:nth-child(n + 2):nth-child(-n + 5) > .item-num {
-    font-size: 15px;
-    letter-spacing: -0.05rem;
-  }
-}
-
-@media all and (max-width: 480px) {
-  .pc-section {
-    display: none;
-  }
-  .mo-section {
-    display: block;
-  }
-
-  /** COMMON 480px **/
-  #main .content-article.width-2-1 {
-    width: 100%;
-  }
-  #main .content-article.width-3-2 {
-    width: 100%;
-  }
-  #main .content-article.width-3-1 {
-    width: 100%;
-  }
-  #main .content-article.width-4-3 {
-    width: 100%;
-  }
-  #main .content-article.width-4-2 {
-    width: 100%;
-  }
-  #main .content-article.width-4-1 {
-    width: 100%;
-  }
-
-  .content-article.fl-l {
-    float: none;
-  }
-  .content-article.fl-r {
-    float: none;
-  }
-  .content-article.po-r {
-    position: relative;
-    top: unset;
-    right: unset;
-  }
-
-  #main .content-section .section-inner {
-    display: block;
-  }
-
-  .content-article .article-title > h3 {
-    font-size: 18px;
-  }
-  .content-article .article-title > .title-more {
-    margin-left: 8px;
-    font-size: 13px;
-  }
-
-  .article-buzz-news .article-list-wrap,
-  .article-youtube-hot .article-list-wrap {
-    width: calc(100% + 40px);
-    margin-left: -20px;
-    padding-bottom: 10px;
-    margin-bottom: -10px;
-    overflow-x: auto;
-  }
-  .article-list-wrap .thumb-list {
-    width: calc(180px * 3 + 14px * 2 + 40px);
-  }
-  .article-list-wrap .thumb-item {
-    width: 180px;
-  }
-  .article-list-wrap .thumb-item:first-child {
-    margin-left: 20px;
-  }
-  .article-list-wrap .thumb-item:last-child {
-    margin-right: 20px;
-  }
-
-  /** MAIN 480px **/
-  #main {
-    width: 100%;
-    min-height: 630px;
-    padding: 78px 14px 30px;
-  }
-  #main.intro-page {
-    width: 100%;
-  }
-
-  /** INTRO PAGE 480px **/
-  /* INTRO PAGE > login section 480px */
-  #main.intro-page .intro-section {
-    margin-bottom: 120px;
-  }
-  #main.intro-page .intro-section .section-content {
-    width: 300px;
-  }
-
-  .intro-section .section-content .logo {
-    width: 190px;
-    margin-bottom: 24px;
-  }
-  .intro-section .section-content .intro-search > input,
-  .intro-section .section-content .intro-login > button {
-    height: 45px;
-    font-size: 14px;
-  }
-
-  #main.intro-page .content-section .section-inner {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-
-  #main .content-section .content-article.intro-keyword-now {
-    display: block;
-    width: 300px;
-    padding-bottom: 24px;
-    margin: 0 auto;
-    order: 3;
-  }
-
-  #main .content-section .content-article.article-buzz-news {
-    order: 1;
-  }
-
-  #main .content-section .content-article.article-youtube-hot {
-    order: 2;
-  }
-
-  /** CONTENT PAGE 480px **/
-  /** CONTENT PAGE >> NOW PAGE 480px **/
-  #main .content-article {
-    margin-bottom: 14px;
-  }
-  #main .content-article.article-engagement {
-    padding: 20px 14px 24px;
-  }
-
-  .tab-section article {
-    width: 100%;
-    margin-bottom: 14px;
-  }
-  .tab-article .tab-list {
-    margin-bottom: 0;
-  }
-  .tab-article .tab-list .tab-item {
-    padding: 8px 20px;
-    font-size: 18px;
-  }
-  .tab-article .tab-list .tab-item.now-on {
-    border-radius: 15px;
-  }
-  .tab-article .tab-list .tab-item > a {
-    display: block;
-    width: 100%;
-    text-align: center;
-  }
-  .tab-article .tab-info-list {
-    display: none;
-  }
-  #main .tab-section .tab-title-article {
-    height: auto;
-    padding: 20px 24px;
-  }
-  .tab-title-article .article-content {
-    display: block;
-  }
-  .tab-title-article .tab-title {
-    font-size: 17px;
-  }
-
-  /** CONTENT PAGE >> NOW PAGE >> engagement 480px **/
-  .article-engagement .article-chart-wrap {
-    display: block;
-  }
-  .article-engagement .chart-area {
-    width: auto;
-    padding-bottom: 70px;
-  }
-  .chart-info-area .info-item {
-    display: inline-block;
-    margin-right: 0;
-  }
-  .chart-info-area .info-item.info-engagement {
-    display: block;
-  }
-  .chart-info-area .info-item:nth-child(n + 2):nth-child(-n + 3) {
-    width: 27%;
-  }
-  .chart-info-area .info-item:nth-child(4):nth-child(-n + 4) {
-    width: 23%;
-  }
-  .chart-info-area .info-item:nth-child(5):nth-child(-n + 5) {
-    width: 23%;
-  }
-  .chart-info-area .info-item > .item-title {
-    white-space: nowrap;
-  }
-  .chart-info-area .info-item.info-engagement > .item-title {
-    font-size: 15px;
-  }
-  .chart-info-area .info-item.info-engagement > .item-num {
-    font-size: 21px;
-  }
-  .chart-info-area .info-item:nth-child(n + 2):nth-child(-n + 5) > .item-title {
-    font-size: 12px;
-  }
-  .chart-info-area .info-item > .item-title > .item-icon {
-    width: 12px;
-    height: 12px;
-  }
-  .chart-info-area .info-item > .item-num {
-    margin-top: -2px;
-    font-size: 19px;
-  }
-
-  /** CONTENT PAGE >> NOW PAGE >> channel details 480px **/
-  .article-card-wrap {
-    width: calc(100% + 40px);
-    margin-left: -20px;
-    overflow-x: scroll;
-  }
-  .detail-card-list {
-    width: calc(210px * 5 + 14px * 4 + 40px);
-    padding: 0 20px;
-    font-size: 0;
-    margin-bottom: 12px;
-  }
-  .detail-card-list > .card-item {
-    display: inline-block;
-    width: 210px;
-    padding: 16px 20px;
-    margin-top: 6px;
-    margin-right: 14px;
-    border-radius: 10px;
-    border: 1px solid #f8f8f8;
-    box-shadow: 1px 4px 10px rgba(88, 88, 88, 0.2);
-    font-size: 14px;
-  }
-  .detail-card-list > .card-item:last-child {
-    margin-right: 0;
-  }
-  .detail-card-list .card-item > .item-title {
-    margin-bottom: 14px;
-    font-size: 17px;
-    font-weight: 600;
-  }
-  .detail-card-list .card-item > .card-sub-list {
-    width: 100%;
-  }
-  .card-sub-list > .sub-item {
-    margin-bottom: 10px;
-  }
-  .card-sub-list > .sub-item:last-child {
-    margin-bottom: 0;
-  }
-  .card-sub-list > .sub-item::after {
-    content: '';
-    display: block;
-    clear: both;
-  }
-  .card-sub-list > .sub-item .sub-title,
-  .card-sub-list > .sub-item .sub-subs {
-    display: block;
-    font-weight: 500;
-  }
-  .card-sub-list > .sub-item .sub-title {
-    float: left;
-    font-size: 13px;
-  }
-  .card-sub-list > .sub-item .sub-subs {
-    float: right;
-    font-size: 13px;
-    color: #8b8d91;
-    font-family: 'Spoqa Han Sans Neo', 'Pretendard', 'Noto Sans KR',
-      Apple Gothic, 'sans-serif';
-  }
-  .card-sub-list > .sub-item.item-icon {
-    width: 100%;
-    height: 34px;
-    margin-top: 14px;
-    text-align: center;
-  }
-
-  .card-item > .item-title-wrap {
-    margin-top: -4px;
-    margin-bottom: 12px;
-  }
-  .card-item > .item-title-wrap > .icon-area {
-    float: right;
-    width: 50px;
-    height: 50px;
-    margin-right: -10px;
-    border-radius: 50%;
-    background-image: url('../img/icon/icon-sns.svg');
-    background-repeat: no-repeat;
-    background-size: 60%;
-    background-position: center;
-    border: 1px solid #ddd;
-  }
-  .card-item > .item-title-wrap > h4 {
-    display: inline-block;
-    line-height: 50px;
-    font-size: 17px;
-    font-weight: 600;
-    vertical-align: top;
-  }
-  .card-item > .item-title-wrap > .icon-area.icon-sns {
-    background-image: url('../img/icon/icon-sns-c2aeec.svg');
-  }
-  .card-item > .item-title-wrap > .icon-area.icon-commu {
-    background-image: url('../img/icon/icon-commu-c2aeec.svg');
-  }
-  .card-item > .item-title-wrap > .icon-area.icon-blog {
-    background-image: url('../img/icon/icon-blog-c2aeec.svg');
-    background-size: 58%;
-  }
-  .card-item > .item-title-wrap > .icon-area.icon-cafe {
-    background-image: url('../img/icon/icon-cafe-c2aeec.svg');
-    background-position: 58% center;
-  }
-  .card-item > .item-title-wrap > .icon-area.icon-news {
-    background-image: url('../img/icon/icon-news-c2aeec.svg');
-    background-size: 58%;
-  }
-
-  .card-item .more-btn-wrap {
-    width: 100%;
-  }
-  .card-item .more-btn {
-    display: inline-block;
-    width: 100%;
-    padding: 8px 0;
-    margin-top: 14px;
-    border-radius: 8px;
-    border: 1px solid #ddd;
-    font-size: 13px;
-    text-align: center;
-  }
-
-  /* NOW page >> SENTIMENT 480px */
-  #main .content-article.width-3-1.article-sentiment {
-    width: 100%;
-  }
-
-  /* NOW page >> SENTIMENT BY CHANNEL 480px */
-  #main .content-article.width-3-2.article-sentiment-channels {
-    width: 100%;
-  }
-
-  /* NOW page >> KEYWORD ASSOCIATION 480px */
-  #main .content-article.width-4-2.article-keyword-association {
-    margin-bottom: 14px;
-  }
-  #main .content-article.width-4-1.article-sentiment-keyword,
-  #main .content-article.width-4-1.article-keyword-ranking {
-    width: 100%;
-  }
-  .article-sentiment-keyword,
-  .article-keyword-ranking {
-    display: inline-block;
-  }
-
-  /** CONTENT PAGE >> TREND PAGE 480px **/
-
-  /* TREND PAGE >> keyword trend */
-  .article-keyword-trend .article-rank-wrap .trend-rank-wrap {
-    width: 400%;
-  }
-  #main .content-article.article-keyword-trend {
-    overflow: hidden;
-  }
-  .article-content .slide-btn-wrap > .slide-btn.slide-left {
-    left: -16px;
-  }
-  .article-content .slide-btn-wrap > .slide-btn.slide-right {
-    right: -16px;
-  }
-
-  /** CONTENT page >> HOTTEST page **/
-
-  /* HOTTEST page >> cafe top10 */
-  .hottest-item.item-subs > .contents-area > .item-name {
-    padding-left: 8px;
-  }
-
-  /* HOTTEST page >> post top10 */
-  .hottest-item > .icon-area {
-    width: 24px;
-    height: 24px;
-    margin-right: 6px;
-  }
-  .hottest-wide-list .item-subs > .contents-area .item-post-title {
-    padding-left: 8px;
-  }
-  .hottest-wide-list .hottest-item > .contents-area .item-post-title {
-    padding-right: 8px;
-  }
-  .article-hottest-top10 .hottest-item .item-date,
-  .article-hottest-top10 .hottest-item .item-id,
-  .article-hottest-top10 .hottest-item .item-comments,
-  .article-hottest-top10 .hottest-item .item-likes,
-  .article-hottest-top10 .hottest-item .item-shares {
-    display: none;
-  }
-  .hottest-wide-list .hottest-item > .contents-area .item-post-title {
-    width: 74%;
-  }
-  .hottest-wide-list .hottest-item > .contents-area .item-views {
-    width: 26%;
-  }
-}
-
-/*** SSTT 480px ***/
-@media all and (max-width: 480px) {
-  /** STATUS page **/
-  .chart-option__wrap > .chart-option--radio {
-    position: relative;
-    top: unset;
-    right: unset;
-    transform: unset;
-  }
-
-  /** TREND page **/
-  /* TREND page -> controlArea 480px */
-  #buttonBar {
-    flex-wrap: wrap;
-    justify-content: right;
-    gap: 10px;
-  }
-  #buttonBar .icon-btn > button {
-    width: 32px;
-    height: 30px;
-  }
-  #buttonBar .btn > button {
-    line-height: 28px;
-    font-size: 13px;
-  }
-  #buttonBar .input-btn__wrap .input-btn > input {
-    height: 30px;
-  }
-  #buttonBar select {
-    height: 30px;
-    font-size: 13px;
-  }
-  #buttonBar select > option {
-    line-height: 1.2;
-  }
-
-  /** CONTENTS page **/
-  .content-article.article-search-keyword {
-    position: relative;
-    top: unset;
-    right: unset;
-  }
-
-  .table-search {
-    flex-wrap: wrap;
-  }
-  .table-search > label.txt {
-    font-size: 13px;
-  }
-  .table-search select {
-    height: 30px;
-    font-size: 13px;
-  }
-  .table-search select:last-child {
-    margin-right: 0;
-  }
-  .table-search .search-word-box {
-    width: calc(100% - 110px);
-  }
-  .detail-table .table-search .search-word-box {
-    margin-right: 0;
-  }
-  .table-search label.input-search-word {
-    width: 100%;
-  }
-  .search-word-box .input-search-word input[type='text'] {
-    width: 100%;
-    height: 30px;
-  }
-  .search-word-box .search-word__btn {
-    padding: 0 14px;
-    line-height: 28px;
-  }
-  .table-search .btn > button,
-  .table-search .btn > a {
-    padding: 0 14px;
-    line-height: 28px;
-    font-size: 13px;
-  }
-}
