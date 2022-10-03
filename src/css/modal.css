@@ -1,15 +1,17 @@
-/* MODAL common */
+/*** COMMON ***/
 #modal .modal-wrap {
   min-height: 200px;
   max-height: 80vh;
 }
 
+/*** MODAL ***/
 #modal .box-title > h4 {
   margin-bottom: 8px;
   font-size: 16px;
   font-weight: 600;
 }
 
+/** MODAL -> CONTENT TABLE **/
 #modal table {
   table-layout: fixed;
   width: 100%;
@@ -52,16 +54,8 @@
 #modal table tr.content-subs > td {
   line-height: 1.4;
 }
-/* MODAL >> 컨텐츠 원문 모달 */
-.modalBg {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.1);
-}
 
+/** MODAL -> RESULT DATA **/
 #resultDataModal,
 .modal-section {
   display: none;

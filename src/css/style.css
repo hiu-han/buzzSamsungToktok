@@ -51,6 +51,56 @@
 /* TABLE WRAP */
 /***------------------ common.css  END ------------------***/
 
+/***------------------ layout.css  START ------------------***/
+/*** HAEDER ***/
+/** HEADER -> SEARCH AREA **/
+/** HEADER -> DETAIL SLIDER **/
+/* HEADER -> DETAIL SLIDER -> detailChannelArea */
+/* HEADER -> DETAIL SLIDER -> searchArea (기간설정) */
+/* HEADER -> DETAIL SLIDER -> detailKeywordArea */
+/* HEADER -> DETAIL SLIDER -> detailBtnArea */
+
+/*** FOOTER ***/
+
+/*** ASIDE ***/
+/** ASIDE -> GO TOP **/
+/** ASIDE -> LOADING ANIMATION **/
+/** ASIDE -> MODAL **/
+/* ASIDE -> MODAL -> 콘텐츠 원문 리스트 모달 */
+/* ASIDE -> MODAL -> 콘텐츠 원문 내용 모달 */
+/* ASIDE -> MODAL -> 로그인 모달 */
+/* ASIDE -> MODAL -> 검색 설정 모달 */
+
+/*** HEADER - 1400px ***/
+/** HEADER -> SEARCH AREA - 1400px **/
+
+/*** HEADER - 768px ***/
+/** HEADER -> DETAIL SLIDER - 768px **/
+/* HEADER -> DETAIL SLIDER -> detailChannelArea - 768px */
+/* HEADER -> DETAIL SLIDER -> searchArea (기간설정) - 768px */
+/* HEADER -> DETAIL SLIDER -> detailKeywordArea - 768px */
+/* HEADER -> DETAIL SLIDER -> detailBtnArea - 768px */
+
+/*** FOOTER - 768px ***/
+
+/*** ASIDE - 768px ***/
+/** ASIDE -> MODAL - 768px **/
+/* ASIDE -> MODAL -> 콘텐츠 원문 리스트 모달 - 768px */
+/* ASIDE -> MODAL -> 콘텐츠 원문 내용 모달 - 768px */
+
+/*** HEADER - 480px ***/
+
+/*** ASIDE - 480px ***/
+/** ASIDE -> MODAL - 480px **/
+/* ASIDE -> MODAL -> 콘텐츠 원문 리스트 모달 - 480px */
+/* ASIDE -> MODAL -> 콘텐츠 원문 내용 모달 - 480px */
+
+/*** FOOTER - 480px ***/
+
+/*** ASIDE - 480px ***/
+/** ASIDE -> GO TOP - 480px **/
+/***------------------ layout.css  END ------------------***/
+
 /***------------------ style.css  START ------------------***/
 /*** COMMON ***/
 /** COMMON -> BODY **/
@@ -116,7 +166,7 @@
 /** CONTENT -> STATUS PAGE - 680px **/
 /* CONTENT -> STATUS PAGE -> Engagement article - 680px */
 
-/*** COMMON ***/
+/*** COMMON - 480px ***/
 /** COMMON -> BODY - 480px **/
 /** COMMON -> SECTION ARTICLE - 480px **/
 /** COMMON -> PAGE TAP - 480px **/
@@ -145,3 +195,11 @@
 
 /*** USER PRESET - 480px ***/
 /***------------------ style.css  END ------------------***/
+
+/***------------------ modal.css  START ------------------***/
+/*** COMMON ***/
+
+/*** MODAL ***/
+/** MODAL -> CONTENT TABLE **/
+/** MODAL -> RESULT DATA **/
+/***------------------ modal.css  END ------------------***/
