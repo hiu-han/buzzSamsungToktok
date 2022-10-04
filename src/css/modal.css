@@ -91,14 +91,6 @@
   width: calc(100% - 50px);
 }
 
-#modal .cls-btn {
-  position: absolute;
-  /* top: 20px; */
-  top: 0px;
-  /* right: 20px; */
-  right: 0px;
-}
-
 #resultDataModal .result-data-content {
   display: flex;
   flex-direction: column;

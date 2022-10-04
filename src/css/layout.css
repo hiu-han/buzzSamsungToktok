@@ -53,7 +53,7 @@ header:hover {
 
 /** HEADER -> SEARCH AREA **/
 .header-inner .search-area {
-  width: 900px;
+  /* width: 900px; */
   height: inherit;
   padding-top: 10px;
 }
@@ -498,20 +498,19 @@ footer {
 address > .addr-info > p {
   display: inline-block;
   position: relative;
-  padding-right: 17px;
-  margin-right: 14px;
+  padding-right: 21px;
+  margin-right: 17px;
 }
 address > .addr-info > p::after {
   content: '';
-  /* display: block; */
-  display: none;
+  display: block;
   position: absolute;
   top: 52%;
   right: 0;
   transform: translateY(-50%);
   width: 1px;
-  height: 11px;
-  background-color: #888;
+  height: 10px;
+  background-color: #ccc;
 }
 address > .addr-info > p:last-child::after {
   display: none;
@@ -679,8 +678,7 @@ address > .copyright {
   top: unset;
   right: unset;
 }
-.show-all-top #clsAllList,
-.show-origin-top > #clsOriginList {
+.modal-section .modal-cls-btn {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -1557,8 +1555,11 @@ h3.logo {
   }
 }
 
-@media all and (max-width: 768px) {
-  /*** HEADER - 768px ***/
+@media all and (max-width: 1024px) {
+}
+
+@media all and (max-width: 1024px) {
+  /*** HEADER - 1024px ***/
   #header {
     background-color: #f7f8f8;
   }
@@ -1575,15 +1576,15 @@ h3.logo {
   .header-inner {
     max-width: unset;
     min-width: unset;
-    height: 48px;
+    height: 58px;
     padding-top: 11px;
   }
   .header-inner .logo {
     position: absolute;
-    top: 46%;
+    top: 48%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 140px;
+    width: 170px;
     padding-top: 3px;
     margin-right: 0;
   }
@@ -1591,13 +1592,13 @@ h3.logo {
   .header-inner > .user-area {
     display: none;
   }
-  .header-inner > .mobile-menu-btn,
+  /* .header-inner > .mobile-menu-btn, */
   .header-inner > .search-slide-btn,
   .header-inner > .go-preset-btn {
     display: inline-block;
     position: relative;
-    width: 24px;
-    height: 24px;
+    width: 32px;
+    height: 32px;
   }
   .mobile-menu-btn > .link-area {
     display: block;
@@ -1631,7 +1632,7 @@ h3.logo {
     background-image: url('../img/icon/icon-setting.svg');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 22px;
+    background-size: 27px;
   }
   .header-inner > .go-preset-btn > a {
     display: block;
@@ -1645,10 +1646,10 @@ h3.logo {
     background-image: url('../img/icon/icon-search-31.svg');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 19px;
+    background-size: 24px;
   }
 
-  /** HEADER -> DETAIL SLIDER - 768px **/
+  /** HEADER -> DETAIL SLIDER - 1024px **/
   .detail-slider {
     top: 0;
     left: 0;
@@ -1687,7 +1688,7 @@ h3.logo {
     float: unset;
   }
 
-  /* HEADER -> DETAIL SLIDER -> detailChannelArea - 768px */
+  /* HEADER -> DETAIL SLIDER -> detailChannelArea - 1024px */
   .detail-area-wrap .detail-channel-area {
     order: 3;
   }
@@ -1748,7 +1749,7 @@ h3.logo {
     margin-right: 10px;
   }
 
-  /* HEADER -> DETAIL SLIDER -> searchArea (기간설정) - 768px */
+  /* HEADER -> DETAIL SLIDER -> searchArea (기간설정) - 1024px */
   .detail-slider .search-area {
     display: block;
     margin-top: 34px;
@@ -1788,7 +1789,7 @@ h3.logo {
     padding-right: 4px;
   }
 
-  /* HEADER -> DETAIL SLIDER -> detailKeywordArea - 768px */
+  /* HEADER -> DETAIL SLIDER -> detailKeywordArea - 1024px */
   .detail-area-wrap .detail-keyword-area {
     padding: 0;
     order: 1;
@@ -1818,7 +1819,7 @@ h3.logo {
     width: 82%;
   }
 
-  /* HEADER -> DETAIL SLIDER -> detailBtnArea - 768px */
+  /* HEADER -> DETAIL SLIDER -> detailBtnArea - 1024px */
   .slider-inner .detail-btn-area {
     padding-bottom: 90px;
   }
@@ -1849,7 +1850,7 @@ h3.logo {
     width: calc(60% - 4px);
   }
 
-  /*** FOOTER - 768px ***/
+  /*** FOOTER - 1024px ***/
   .footer-inner {
     max-width: unset;
     min-width: unset;
@@ -1858,16 +1859,10 @@ h3.logo {
   address > .addr-info > p {
     line-height: 1.8;
   }
-  address > .addr-info > p.co-addr {
-    padding-right: 240px;
-  }
-  address > .addr-info > p.co-addr::after {
-    display: none;
-  }
 
-  /*** ASIDE - 768px ***/
-  /** ASIDE -> MODAL - 768px **/
-  /* ASIDE -> MODAL -> 콘텐츠 원문 리스트 모달 - 768px */
+  /*** ASIDE - 1024px ***/
+  /** ASIDE -> MODAL - 1024px **/
+  /* ASIDE -> MODAL -> 콘텐츠 원문 리스트 모달 - 1024px */
   #showAllModal > .show-all-wrap {
     width: 80%;
     padding: 16px 16px 20px;
@@ -1964,9 +1959,9 @@ h3.logo {
     display: none;
   }
 
-  /* ASIDE -> MODAL -> 콘텐츠 원문 내용 모달 - 768px */
+  /* ASIDE -> MODAL -> 콘텐츠 원문 내용 모달 - 1024px */
   #showOriginModal > .show-origin-wrap {
-    width: 76%;
+    width: 60%;
     margin: 0 auto;
   }
   .show-origin-inner > .show-origin-top {
@@ -2006,6 +2001,42 @@ h3.logo {
   }
   .origin-info-list > .origin-info-item::after {
     display: none;
+  }
+}
+
+@media all and (max-width: 768px) {
+  /*** HEADER - 768px ***/
+  .header-inner {
+    height: 48px;
+  }
+  .header-inner .logo {
+    width: 140px;
+  }
+  .header-inner > .search-slide-btn,
+  .header-inner > .go-preset-btn {
+    width: 24px;
+    height: 24px;
+  }
+  .header-inner > .go-preset-btn {
+    background-size: 22px;
+  }
+  .header-inner > .search-slide-btn {
+    background-size: 19px;
+  }
+
+  /*** FOOTER - 768px ***/
+  address > .addr-info > p.co-addr {
+    padding-right: 240px;
+  }
+  address > .addr-info > p.co-addr::after {
+    display: none;
+  }
+
+  /*** ASIDE - 768px ***/
+  /** ASIDE -> MODAL - 768px **/
+  /* ASIDE -> MODAL -> 콘텐츠 원문 내용 모달 - 768px */
+  #showOeiginModal > .show-origin-wrap {
+    width: 76%;
   }
 }
 

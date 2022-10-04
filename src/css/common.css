@@ -123,7 +123,6 @@
 }
 .txt-highlight::before {
   content: '';
-  display: inline-block;
   display: block;
   position: absolute;
   top: 30%;
@@ -232,10 +231,12 @@ button:hover {
   border: none;
   border-radius: 10px;
   background: none;
-  background-color: #fff;
+  background-color: #f8f8f8;
   text-indent: -99999px;
+  transition: 0.2s;
 }
 .cls-btn:hover {
+  background-color: #fff;
   box-shadow: 1px 3px 12px rgba(128, 128, 128, 0.2);
 }
 .cls-btn::before,

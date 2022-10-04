@@ -203,13 +203,13 @@ body {
 }
 .tab-section article {
   display: inline-block;
-  /* width: 100%; */
-  width: 50%;
+  width: calc(50% - 12px);
   margin-bottom: 24px;
   font-size: 14px;
 }
 .tab-article .tab-list {
   display: inline-block;
+  width: 100%;
   padding: 0;
   margin-bottom: 16px;
   border-radius: 18px;
@@ -219,12 +219,30 @@ body {
 }
 .tab-article .tab-list .tab-item {
   display: inline-block;
-  padding: 13px 40px;
-  color: #919191;
+  position: relative;
+  width: 33.33333%;
+  height: 55px;
+}
+.tab-article .tab-list .tab-item.tab-status {
+  width: 30.33333%;
+}
+.tab-article .tab-list .tab-item.tab-trend {
+  width: 30.33333%;
+}
+.tab-article .tab-list .tab-item.tab-contents {
+  width: 39.33333%;
+}
+.tab-article .tab-list .tab-item.tab-preset {
+  display: none;
+}
+.tab-article .tab-list .tab-item > a {
+  display: inline-block;
+  width: 100%;
+  line-height: 55px;
   font-size: 22px;
   font-weight: 700;
-}
-.tab-article .tab-list .tab-item {
+  color: #919191;
+  text-align: center;
   letter-spacing: -0.02rem;
 }
 .tab-article .tab-list .tab-item.now-on {
@@ -430,10 +448,6 @@ body {
 .article-content-top > .color-info {
   position: relative;
   text-align: center;
-  /* position: absolute; */
-  /* top: 0; */
-  /* left: 50%; */
-  /* transform: translateX(-50%); */
 }
 .article-content-top .color-list {
   display: inline-block;
@@ -833,7 +847,6 @@ body {
 }
 
 /*** MAIN ***/
-
 /** MAIN -> INTRO PAGE **/
 /* MAIN -> INTRO PAGE -> Login section */
 #main.intro-page .intro-section {
@@ -1019,7 +1032,6 @@ body {
 #main .article-engagement {
   width: 100%;
   padding-bottom: 20px;
-  /* font-size: 0; */
 }
 .article-engagement .article-title {
   margin-bottom: 0;
@@ -1029,31 +1041,6 @@ body {
   display: inline-block;
   font-size: 14px;
 }
-/* .article-engagement .chart-area {
-  position: relative;
-  width: 40%;
-  height: 270px;
-}
-.article-engagement .chart-area .chart-pie {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 254px;
-  height: 254px;
-  border-radius: 50%;
-  background-color: #90d3dc;
-}
-.article-engagement .chart-pie .value-engagement {
-  position: absolute;
-  width: 140px;
-  height: 140px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  background-color: #fff;
-} */
 .article-engagement .chart-info-area {
   width: 100%;
   text-align: center;
@@ -1079,14 +1066,7 @@ body {
 }
 .chart-info-area .info-item:last-child {
   margin-right: 0;
-  /* border-right: none; */
 }
-/* .chart-info-area .info-item > .item-color {
-  width: 18px;
-  height: 5px;
-  margin-bottom: 4px;
-  border-radius: 10px;
-} */
 .chart-info-area .info-item > .item-title {
   margin-bottom: 4px;
   font-size: 14px;
@@ -1762,7 +1742,6 @@ body {
   background-image: none;
 }
 .set-btn-wrap > .set-btn > em {
-  /* display: block; */
   display: none;
   position: absolute;
   bottom: 120%;
@@ -2012,7 +1991,6 @@ body {
   top: 50%;
   left: 10px;
   transform: translateY(-50%);
-  /* margin-bottom: 4px; */
   font-size: 12px;
   font-weight: 500;
 }
@@ -2072,11 +2050,14 @@ body {
 /*** 반응형 스타일 - 1200px  ***/
 @media all and (max-width: 1200px) {
   /*** COMMON - 1200px ***/
-
   /** COMMON -> TABLE - 1200px **/
   .table-wrap {
     overflow-x: auto;
   }
+}
+
+@media all and (max-width: 1024px) {
+  /*** COMMON - 1024px ***/
 }
 
 /*** 반응형 스타일 768px  ***/
@@ -2097,23 +2078,11 @@ body {
     font-size: 0;
   }
   .tab-article .tab-list .tab-item {
-    display: inline-block;
-    position: relative;
-    width: 33.33333%;
-    /* width: 25%; */
     height: 46px;
-    font-size: 20px;
-    padding: 9px 28px;
-  }
-  .tab-article .tab-list .tab-item.tab-preset {
-    display: none;
   }
   .tab-article .tab-list .tab-item > a {
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    line-height: 46px;
+    font-size: 20px;
   }
   .tab-article .tab-info-list .tab-info-item {
     padding-right: 0px;
@@ -2428,7 +2397,7 @@ body {
     margin-bottom: 0;
   }
   .tab-article .tab-list .tab-item {
-    padding: 8px 20px;
+    /* padding: 8px 20px; */
     font-size: 18px;
   }
   .tab-article .tab-list .tab-item.now-on {
@@ -2822,7 +2791,6 @@ body {
   .usr-set-wrap .usr-set-item .usr-set-item-cls {
     display: inline-block;
     position: absolute;
-    /* top: 25px; */
     top: 59px;
     left: 22px;
     width: 11px;
