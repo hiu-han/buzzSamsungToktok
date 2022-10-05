@@ -298,7 +298,9 @@ body {
 }
 .table-search .search-select-box,
 .table-search .sarch-word-box {
-  display: inline-block;
+  /* display: inline-block; */
+  display: inline-flex;
+  flex-wrap: nowrap;
   text-align: left;
 }
 .detail-table .table-search .search-word-box {
@@ -2058,6 +2060,10 @@ body {
 
 @media all and (max-width: 1024px) {
   /*** COMMON - 1024px ***/
+  /** COMMON -> BODY - 1024px **/
+  #main {
+    min-height: calc(100vh - 160px);
+  }
 }
 
 /*** 반응형 스타일 768px  ***/
@@ -2095,7 +2101,8 @@ body {
   /** COMMON -> TABLE - 768px **/
   .table-search {
     display: flex;
-    flex-wrap: nowrap;
+    /* flex-wrap: nowrap; */
+    flex-wrap: wrap;
     justify-content: right;
     align-items: center;
     gap: 8px;

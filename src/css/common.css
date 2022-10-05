@@ -402,6 +402,8 @@ input[type='checkbox']:checked + label::before {
 }
 .search-word-box .input-search-word input[type='text'] {
   width: auto;
+  max-width: 200px;
+  min-width: 100px;
   height: 34px;
   border-radius: 6px 0 0 6px;
   border: 1px solid #dadada;
@@ -700,9 +702,11 @@ select > option {
   top: 50%;
   right: 50%;
   transform: translate(50%, -50%);
+  width: 100%;
   text-align: center;
 }
 .chart-option__wrap > .chart-option--radio > .option-radio__list {
+  display: inline-block;
   border-radius: 20px;
   background-color: #efefef;
   font-size: 0;
