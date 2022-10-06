@@ -51,7 +51,7 @@ $(document).ready(function () {
     sT = $(this).scrollTop();
     // console.log(sT);
 
-    if (sT > 62) {
+    if (sT > 24) {
       $('#header').addClass(NOWON_CLASSNAME);
     } else {
       $('#header').removeClass(NOWON_CLASSNAME);

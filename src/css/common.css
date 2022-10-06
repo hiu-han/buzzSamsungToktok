@@ -66,6 +66,18 @@
   background-color: #586bd1;
 }
 .colorTest > li.color-11 {
+  background-color: #4dc457;
+}
+.colorTest > li.color-12 {
+  background-color: #bb5b5b;
+}
+.colorTest > li.color-13 {
+  background-color: #c559bc;
+}
+.colorTest > li.color-14 {
+  background-color: #ff9c2a;
+}
+.colorTest > li.color-15 {
   background-color: #dadada;
 }
 
@@ -786,6 +798,12 @@ select > option {
   /* overflow-x: auto; */
 }
 
+@media all and (max-width: 768px) {
+  .chart-option__wrap {
+    margin: -4px 0 24px;
+  }
+}
+
 @media all and (max-width: 480px) {
   /*** COLOR TEST - 480px ***/
   .colorTest {
@@ -806,6 +824,9 @@ select > option {
   }
 
   /* INPUT -> RADIO 옵션 on off 버튼 랩 */
+  .chart-option__wrap {
+    margin: 0 0 24px;
+  }
   .chart-option__wrap > .chart-option--radio {
     position: relative;
     top: unset;

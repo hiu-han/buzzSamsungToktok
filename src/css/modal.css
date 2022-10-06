@@ -77,11 +77,16 @@
   width: 90%;
   min-width: 600px;
   max-width: 800px;
+  height: 70vh;
   padding: 24px 24px 28px;
   background-color: #fff;
   border-radius: 18px;
   box-shadow: 1px 3px 12px rgba(88, 88, 88, 0.2);
   overflow: hidden;
+}
+#resultDataModal > .result-data-wrap > .result-data-inner {
+  height: calc(100% - 40px);
+  /* height: 100%; */
 }
 .result-data-inner > .result-data-top {
   height: 35px;
@@ -95,7 +100,7 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
-  max-height: 650px;
+  height: 100%;
   padding-right: 8px;
   padding-bottom: 20px;
 }
@@ -149,6 +154,19 @@
 @media all and (max-width: 768px) {
   /* MODAL */
   #resultDataModal > .result-data-wrap {
+    width: calc(100% - 64px);
+  }
+}
+
+@media all and (max-width: 680px) {
+  #resultDataModal > .result-data-wrap {
+    min-width: unset;
+  }
+}
+
+@media all and (max-width: 480px) {
+  #resultDataModal > .result-data-wrap {
     width: calc(100% - 28px);
+    padding: 14px 14px 16px;
   }
 }
