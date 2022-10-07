@@ -25,11 +25,33 @@ const chartSentimentData = {
       data: [300, 50, 100],
       backgroundColor: [colorSetPosit[0], colorSetPosit[1], colorSetPosit[2]],
       hoverOffset: 4,
+      datalabels: {
+        color: '#fff',
+      },
     },
+    // {
+    //   label: 'SENTIMENT',
+    //   data: [300, 50, 100],
+    //   backgroundColor: [colorSetPosit[0], colorSetPosit[1], colorSetPosit[2]],
+    //   hoverOffset: 4,
+    //   datalabels: {
+    //     color: '#fff',
+    //   },
+    // },
+    // {
+    //   label: 'SENTIMENT',
+    //   data: [300, 50, 100],
+    //   backgroundColor: [colorSetPosit[0], colorSetPosit[1], colorSetPosit[2]],
+    //   hoverOffset: 4,
+    //   datalabels: {
+    //     color: '#aaa',
+    //   },
+    // },
   ],
 };
 
 const chartSentimentConfig = {
+  plugins: [ChartDataLabels],
   type: 'pie',
   data: chartSentimentData,
   options: {
@@ -41,11 +63,11 @@ const chartSentimentConfig = {
         display: false,
       },
       datalabels: {
-        display: true,
-        align: 'bottom',
-        font: {
-          size: 18,
+        formatter: function (value, context) {
+          let idx = context.dataIndex;
+          return `${context.chart.data.labels[idx]} ${value} 건`;
         },
+        align: 'top',
       },
     },
     elements: {
