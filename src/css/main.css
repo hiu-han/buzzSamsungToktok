@@ -433,6 +433,9 @@ body {
   height: 1px;
   background-color: #555;
 }
+.detail-table .pagination-list .page-count > a {
+  display: inline-block;
+}
 
 /* COMMON -> SECTION ARTICLE -> article-content-top */
 .article-content > .article-content-top {
@@ -2445,7 +2448,7 @@ body {
     font-size: 17px;
   }
 
-  /** COMMON -> TABLE **/
+  /** COMMON -> TABLE - 480px **/
   .table-search {
     flex-wrap: wrap;
   }
@@ -2481,6 +2484,16 @@ body {
     padding: 0 14px;
     line-height: 28px;
     font-size: 13px;
+  }
+
+  .detail-table .pagination-list > li.page-arrow > button {
+    width: 18px;
+    height: 18px;
+  }
+  .detail-table .pagination-list > li > a {
+    font-size: 12px;
+    line-height: 18px;
+    vertical-align: top;
   }
 
   /*** MAIN - 480px ***/
