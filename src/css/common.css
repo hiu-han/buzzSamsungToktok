@@ -597,6 +597,42 @@ select > option {
   line-height: 1.5;
 }
 
+/* INPUT -> SELECT */
+.select__wrap {
+  position: relative;
+  display: inline-block;
+}
+.select__wrap::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 84;
+  height: 1px;
+  background-color: #919191;
+}
+select.select-2 {
+  height: 26px;
+  padding: 0 8px 0 26px;
+  margin-top: 1px;
+  background-color: #efefef;
+  background-image: url('../img/icon/icon-select-default.svg');
+  background-position: 18% 50%;
+}
+select.select-2:focus {
+  border: none;
+  outline: none;
+  background-color: #f2edf4;
+  border: 1px solid #fdfdfd;
+  background-image: url('../img/icon/icon-select-focus.svg');
+  background-position: 18% 49%;
+}
+select.select-2 > option {
+  background-color: #fff;
+}
+
 /* INPUT -> SELECT (CUSTOM) */
 .cont-select {
   position: relative;
@@ -720,7 +756,7 @@ select > option {
 .chart-option__wrap > .chart-option--radio > .option-radio__list {
   display: inline-block;
   border-radius: 20px;
-  background-color: #efefef;
+  background-color: #f1f1f1;
   font-size: 0;
 }
 .chart-option__wrap .option-radio__item {
@@ -740,19 +776,21 @@ select > option {
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0);
   font-size: 13px;
-  font-weight: 500;
+  font-weight: 400;
   color: #818181;
   vertical-align: middle;
   cursor: pointer;
 }
 .chart-option__wrap .option-radio__item > label:hover {
-  color: #866ac8;
+  background-color: #f8f8f8;
+  color: #616161;
 }
 .chart-option__wrap .option-radio__item > input:checked + label {
-  border: 1px solid #866ac8;
-  background-color: #866ac8;
-  color: #fff;
-  box-shadow: 1px 3px 6px rgba(88, 88, 88, 0.2);
+  border: 1px solid #fff;
+  background-color: #fff;
+  color: #616161;
+  font-weight: 500;
+  box-shadow: 1px 2px 8px rgba(88, 88, 88, 0.25);
 }
 .chart-option__wrap .option-radio__item.item-posit > label:hover {
   color: #617ff8;
