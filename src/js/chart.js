@@ -22,7 +22,7 @@ const chartSentimentData = {
   datasets: [
     {
       label: 'SENTIMENT',
-      data: [300, 50, 100],
+      data: [258, 57, 21],
       backgroundColor: [colorSetPosit[0], colorSetPosit[1], colorSetPosit[2]],
       hoverOffset: 4,
       datalabels: {
@@ -64,15 +64,27 @@ const chartSentimentConfig = {
       },
       datalabels: {
         formatter: function (value, context) {
+          const empty = '';
           let idx = context.dataIndex;
-          return `${context.chart.data.labels[idx]} ${value} 건`;
+          const valueTotal = chartSentimentData.datasets[0].data.reduce(
+            (accumulator, currentNumber) => accumulator + currentNumber
+          );
+          const valuePercent = (value / valueTotal) * 100;
+          // return `${context.chart.data.labels[idx]} ${value} 건`;
+          // return `${(value / valueTotal) * 100} %`;
+          // return `${valuePercent.toFixed(2)}%`;
+          return valuePercent < 13 ? empty : `${valuePercent.toFixed(1)}%`;
         },
         align: 'top',
+        font: {
+          size: '14px',
+        },
+        textAlign: 'center',
       },
     },
     elements: {
       arc: {
-        borderWidth: 6,
+        borderWidth: 5,
       },
     },
   },
