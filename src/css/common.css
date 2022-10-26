@@ -591,7 +591,8 @@ select {
 }
 select:focus {
   background-image: url('../img/icon/icon-select-arrow-633fb8.svg');
-  outline: 1px solid #866ac8;
+  outline: none;
+  border: 1px solid #866ac8;
 }
 select > option {
   line-height: 1.5;
