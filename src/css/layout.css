@@ -187,6 +187,49 @@ header:hover {
   line-height: 40px;
   vertical-align: top;
 }
+.user-area .user-menu__list {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 94%;
+  padding: 10px 10px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 1px 3px 14px rgba(88, 88, 88, 0.3);
+}
+.user-area:hover .user-menu__list {
+  display: block;
+}
+.user-menu__list > .menu__item {
+  padding: 4px 10px;
+  border-radius: 8px;
+}
+.user-menu__list > .menu__item:hover {
+  background-color: #f5f5f5;
+}
+.user-menu__list > .menu__item.item--logout:hover {
+  background-color: #fceeee;
+}
+.user-menu__list > .menu__item:last-child {
+  margin-bottom: 0;
+}
+.user-menu__list > .menu__item > a {
+  display: block;
+  line-height: 1.8;
+  font-size: 16px;
+  color: #666;
+  letter-spacing: -0.04rem;
+}
+.user-menu__list > .menu__item.item--logout > a {
+  color: #fb6761;
+}
+.user-menu__list > .menu__item:hover > a {
+  color: #313131;
+}
+.user-menu__list > .menu__item.item--logout:hover > a {
+  color: #fb6761;
+}
 
 /** HEADER -> DETAIL SLIDER **/
 .detail-slider {
