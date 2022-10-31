@@ -166,6 +166,7 @@ header:hover {
   top: 10px;
   right: 14px;
   width: 145px;
+  height: 46px;
   text-align: right;
 }
 .user-area > .link-area {
@@ -173,14 +174,17 @@ header:hover {
   font-size: 14px;
 }
 .user-area .user-profile {
+  position: relative;
   display: inline-block;
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   margin-right: 4px;
-  border: 1px solid #eee;
   border-radius: 50%;
   background-color: #ddd;
   background: no-repeat center/110% url(../img/main/profile.PNG);
+}
+.user-area:hover .user-profile {
+  box-shadow: 1px 2px 6px rgba(88, 88, 88, 0.3);
 }
 .user-area .user-name {
   display: inline-block;
@@ -231,7 +235,20 @@ header:hover {
   color: #fb6761;
 }
 
-/** HEADER -> DETAIL SLIDER **/
+/** HEADER {-> DETAIL SLIDER **/
+.slider-bg {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: -1;
+}
+.slider-bg.now-on {
+  display: block;
+}
 .detail-slider {
   display: none;
   position: absolute;
