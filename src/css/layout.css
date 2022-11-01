@@ -609,6 +609,62 @@ address > .copyright {
   margin-top: 13px;
 }
 
+/** ASIDE -> SWITCHING ACOUNT **/
+#switchingAcount {
+  position: fixed;
+  bottom: 178px;
+  right: 6vw;
+  border-radius: 30px;
+  background-color: #fff;
+  box-shadow: 1px 3px 8px rgba(88, 88, 88, 0.3);
+}
+#switchingAcount .float-btn {
+  display: none;
+  border-radius: 30px;
+}
+#switchingAcount .float-btn.now-on {
+  display: block;
+}
+#switchingAcount .float-btn > a {
+  display: block;
+  width: 45px;
+  height: 45px;
+  font-size: 0;
+  overflow: hidden;
+  transition: 0.35s ease-out;
+}
+#switchingAcount .float-btn > a > .btn--icon {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-image: url('../img/icon/icon-link-sound.svg');
+  transition: 0.3s ease-out;
+}
+#switchingAcount .float-btn > a > .btn--text {
+  display: inline-block;
+  padding: 0 16px 0 8px;
+  line-height: 45px;
+  font-size: 15px;
+  font-weight: 500;
+  vertical-align: top;
+  opacity: 0;
+  transition: 0.25s;
+}
+#switchingAcount .float-btn.btn--soundbar:hover > a {
+  width: 154px;
+}
+#switchingAcount .float-btn.btn--speaker:hover > a {
+  /* width: 136px; */
+  width: 154px;
+}
+#switchingAcount .float-btn:hover > a > .btn--icon {
+  background-image: url('../img/icon/icon-link-sound_focus.svg');
+}
+#switchingAcount .float-btn:hover > a > .btn--text {
+  opacity: 1;
+}
+
 /** ASIDE -> LOADING ANIMATION **/
 #loading {
   display: none;
