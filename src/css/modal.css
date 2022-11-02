@@ -1,7 +1,9 @@
 /*** COMMON ***/
 #modal .modal-wrap {
+  height: 80vh;
   min-height: 200px;
   max-height: 80vh;
+  box-sizing: border-box;
 }
 
 /*** MODAL ***/

@@ -54,9 +54,8 @@ header:hover {
 
 /** HEADER -> SEARCH AREA **/
 .header-inner .search-area {
-  /* width: 900px; */
   height: inherit;
-  padding-top: 10px;
+  padding-top: 11px;
 }
 .search-area > .search-keyword-wrap {
   display: inline-block;
@@ -163,33 +162,44 @@ header:hover {
 
 .header-inner > .user-area {
   position: absolute;
-  top: 10px;
+  top: 8px;
   right: 14px;
   width: 145px;
-  height: 46px;
+  height: 52px;
   text-align: right;
+  cursor: pointer;
 }
 .user-area > .link-area {
   display: inline-block;
   font-size: 14px;
 }
+.user-area > .user-wrap {
+  display: inline-block;
+  padding: 3px;
+  border-radius: 30px;
+  transition: 0.2s ease-out;
+}
 .user-area .user-profile {
   position: relative;
   display: inline-block;
-  width: 42px;
-  height: 42px;
+  width: 40px;
+  height: 40px;
   margin-right: 4px;
   border-radius: 50%;
   background-color: #ddd;
   background: no-repeat center/110% url(../img/main/profile.PNG);
 }
-.user-area:hover .user-profile {
+.user-area:hover > .user-wrap {
   box-shadow: 1px 2px 6px rgba(88, 88, 88, 0.3);
 }
 .user-area .user-name {
   display: inline-block;
+  margin: 0 8px 0 4px;
   line-height: 40px;
   vertical-align: top;
+  font-size: 15px;
+  font-weight: 500;
+  color: #777;
 }
 .user-area .user-menu__list {
   display: none;
@@ -201,6 +211,7 @@ header:hover {
   border-radius: 10px;
   background-color: #fff;
   box-shadow: 1px 3px 14px rgba(88, 88, 88, 0.3);
+  z-index: 300;
 }
 .user-area:hover .user-menu__list {
   display: block;
@@ -589,12 +600,12 @@ address > .copyright {
   position: fixed;
   bottom: 120px;
   right: 6vw;
-  width: 45px;
-  height: 45px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   background-color: #fff;
   border: none;
-  box-shadow: 1px 3px 12px rgba(88, 88, 88, 0.2);
+  box-shadow: 1px 3px 12px rgba(88, 88, 88, 0.3);
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
@@ -612,11 +623,11 @@ address > .copyright {
 /** ASIDE -> SWITCHING ACOUNT **/
 #switchingAcount {
   position: fixed;
-  bottom: 178px;
+  bottom: 183px;
   right: 6vw;
   border-radius: 30px;
   background-color: #fff;
-  box-shadow: 1px 3px 8px rgba(88, 88, 88, 0.3);
+  box-shadow: 1px 3px 12px rgba(88, 88, 88, 0.3);
 }
 #switchingAcount .float-btn {
   display: none;
@@ -627,16 +638,16 @@ address > .copyright {
 }
 #switchingAcount .float-btn > a {
   display: block;
-  width: 45px;
-  height: 45px;
+  width: 50px;
+  height: 50px;
   font-size: 0;
   overflow: hidden;
   transition: 0.35s ease-out;
 }
 #switchingAcount .float-btn > a > .btn--icon {
   display: inline-block;
-  width: 45px;
-  height: 45px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   background-image: url('../img/icon/icon-link-sound.svg');
   transition: 0.3s ease-out;
@@ -644,7 +655,7 @@ address > .copyright {
 #switchingAcount .float-btn > a > .btn--text {
   display: inline-block;
   padding: 0 16px 0 8px;
-  line-height: 45px;
+  line-height: 50px;
   font-size: 15px;
   font-weight: 500;
   vertical-align: top;
@@ -652,11 +663,11 @@ address > .copyright {
   transition: 0.25s;
 }
 #switchingAcount .float-btn.btn--soundbar:hover > a {
-  width: 154px;
+  width: 159px;
 }
 #switchingAcount .float-btn.btn--speaker:hover > a {
   /* width: 136px; */
-  width: 154px;
+  width: 159px;
 }
 #switchingAcount .float-btn:hover > a > .btn--icon {
   background-image: url('../img/icon/icon-link-sound_focus.svg');
@@ -1424,6 +1435,9 @@ h3.logo {
   box-shadow: 1px 3px 12px rgba(88, 88, 88, 0.2);
   overflow: hidden;
 }
+.modal-wrap > .modal-inner {
+  height: 100%;
+}
 .modal-inner > .modal-top {
   height: 34px;
   margin-bottom: 14px;
@@ -1439,6 +1453,7 @@ h3.logo {
 }
 
 .modal-content-wrap {
+  height: calc(100% - 48px);
   padding: 14px;
   background-color: #f5f5f5;
   border-radius: 16px;
@@ -1449,6 +1464,7 @@ h3.logo {
   justify-content: space-between;
   align-items: flex-start;
   gap: 24px;
+  height: 100%;
 }
 .preset-content-inner > div {
   display: inline-block;
@@ -1513,12 +1529,20 @@ h3.logo {
 .preset-wrap {
   position: relative;
   width: 55%;
+  max-height: 100%;
+  height: 100%;
+}
+.preset-list {
+  width: calc(100% + 6px);
+  height: 100%;
+  padding-right: 8px;
 }
 
 .preset-wrap .set-btn-wrap {
   position: absolute;
   top: 20px;
   right: 20px;
+  margin-right: 8px;
 }
 .preset-wrap .set-btn-wrap > .set-btn {
   width: auto;
