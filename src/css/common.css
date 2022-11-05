@@ -201,6 +201,7 @@
   transition: 0.2s;
 }
 button {
+  margin: 0;
   word-break: keep-all;
 }
 button:hover {
