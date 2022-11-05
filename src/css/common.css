@@ -851,7 +851,8 @@ select.select-2 > option {
     gap: 14px;
   }
   .colorTest > li {
-    width: 150px;
+    width: calc(50% - 7px);
+    max-width: 150px;
     margin: 0;
   }
 
