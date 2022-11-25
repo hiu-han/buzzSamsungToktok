@@ -633,7 +633,7 @@ address > .copyright {
   display: none;
   position: relative;
   border-radius: 30px;
-  /* cursor: pointer; */
+  cursor: pointer;
 }
 #switchingAcount .float-btn > a {
   display: block;
