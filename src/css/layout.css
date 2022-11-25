@@ -631,12 +631,26 @@ address > .copyright {
 }
 #switchingAcount .float-btn {
   display: none;
+  position: relative;
   border-radius: 30px;
+  /* cursor: pointer; */
+}
+#switchingAcount .float-btn > a {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+}
+#switchingAcount .float-btn:hover > a {
+  width: 159px;
+  height: 50px;
 }
 #switchingAcount .float-btn.now-on {
   display: block;
 }
-#switchingAcount .float-btn > a {
+#switchingAcount .float-btn > .btn__item-inner {
   display: block;
   width: 50px;
   height: 50px;
@@ -644,7 +658,7 @@ address > .copyright {
   overflow: hidden;
   transition: 0.35s ease-out;
 }
-#switchingAcount .float-btn > a > .btn--icon {
+#switchingAcount .float-btn > .btn__item-inner > .btn--icon {
   display: inline-block;
   width: 50px;
   height: 50px;
@@ -652,7 +666,7 @@ address > .copyright {
   background-image: url('../img/icon/icon-link-sound.svg');
   transition: 0.3s ease-out;
 }
-#switchingAcount .float-btn > a > .btn--text {
+#switchingAcount .float-btn > .btn__item-inner > .btn--text {
   display: inline-block;
   padding: 0 16px 0 8px;
   line-height: 50px;
@@ -662,17 +676,17 @@ address > .copyright {
   opacity: 0;
   transition: 0.25s;
 }
-#switchingAcount .float-btn.btn--soundbar:hover > a {
+#switchingAcount .float-btn.btn--soundbar:hover > .btn__item-inner {
   width: 159px;
 }
-#switchingAcount .float-btn.btn--speaker:hover > a {
+#switchingAcount .float-btn.btn--speaker:hover > .btn__item-inner {
   /* width: 136px; */
   width: 159px;
 }
-#switchingAcount .float-btn:hover > a > .btn--icon {
+#switchingAcount .float-btn:hover > .btn__item-inner > .btn--icon {
   background-image: url('../img/icon/icon-link-sound_focus.svg');
 }
-#switchingAcount .float-btn:hover > a > .btn--text {
+#switchingAcount .float-btn:hover > .btn__item-inner > .btn--text {
   opacity: 1;
 }
 
@@ -2237,5 +2251,10 @@ h3.logo {
   /** ASIDE -> GO TOP - 480px **/
   #goTop {
     bottom: 50px;
+    right: 3vw;
+  }
+  #switchingAcount {
+    bottom: 110px;
+    right: 3vw;
   }
 }
